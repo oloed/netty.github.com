@@ -1010,7 +1010,7 @@ body.bp #content .author:before {
 body.bp #content #stableReleaseDocs, body.bp #content #unstableReleaseDocs {
   display: block;
   float: left;
-  width: 290px !important;
+  width: 292px !important;
   border: #556e90 solid 1px;
   padding: 10px 16px;
   -moz-border-radius: 4px;
