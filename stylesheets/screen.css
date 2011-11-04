@@ -1046,17 +1046,16 @@ body.bp #content #unstableReleaseDocs {
 }
 /* line 421 */
 body.bp #content .panel-wrapper {
-  margin: 16px 0 0 82px;
+  margin: 8px 0 8px 82px;
 }
 /* line 423 */
 body.bp #content .panel-wrapper .panel {
   display: block;
   float: left;
   width: 224px !important;
-  height: 154px !important;
   border: #556e90 solid 1px;
   margin: 12px 8px 0px 8px;
-  padding: 10px 16px;
+  padding: 6px 16px 10px 16px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   -o-border-radius: 4px;
@@ -1070,33 +1069,38 @@ body.bp #content .panel-wrapper .panel {
   background-image: -ms-linear-gradient(#ffffff, #cfd7e2, #afbdcf);
   background-image: linear-gradient(#ffffff, #cfd7e2, #afbdcf);
 }
-/* line 434 */
+/* line 433 */
 body.bp #content .panel-wrapper .panel h2 {
   text-align: center;
   font-size: 20px;
-  margin: 0 0 8px 0;
+  margin: 0 0 4px 0;
 }
-/* line 439 */
+/* line 438 */
 body.bp #content .panel-wrapper .panel p {
   margin: 0 0 0 0;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto;
 }
-/* line 448 */
+/* line 444 */
+body.bp #content .panel-wrapper .panel em {
+  font-style: normal;
+  font-weight: bold;
+}
+/* line 451 */
 body.bp #content .post {
   margin: 0;
 }
-/* line 450 */
+/* line 453 */
 body.bp #content .post h2 {
   margin-bottom: 0;
 }
-/* line 452 */
+/* line 455 */
 body.bp #content .post h2 a {
   text-decoration: none;
   color: #2f3d50;
 }
-/* line 457 */
+/* line 460 */
 body.bp #content .post .author {
   text-align: left;
   font-size: 12px;
@@ -1104,56 +1108,56 @@ body.bp #content .post .author {
   padding-bottom: 6px;
   border-bottom: #dfe4ec solid 1px;
 }
-/* line 462 */
+/* line 465 */
 body.bp #content .post .author:before {
   content: 'Posted by ';
 }
-/* line 467 */
+/* line 470 */
 body.bp #content .post .body {
   margin: 12px 0 0 0;
 }
-/* line 470 */
+/* line 473 */
 body.bp #content .post .comments {
   margin: 12px;
 }
-/* line 473 */
+/* line 476 */
 body.bp #content .post .comments div, body.bp #content .post .comments p, body.bp #content .post .comments blockquote, body.bp #content .post .comments pre, body.bp #content .post .comments span, body.bp #content .post .comments form {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 479 */
+/* line 482 */
 body.bp #content .post .comments h1, body.bp #content .post .comments h2, body.bp #content .post .comments h3, body.bp #content .post .comments h4, body.bp #content .post .comments h5, body.bp #content .post .comments h6, body.bp #content .post .comments ul {
   margin: 0;
 }
-/* line 482 */
+/* line 485 */
 body.bp #content .post .comments .idc-c-t-inner textarea {
   width: 100% !important;
 }
-/* line 485 */
+/* line 488 */
 body.bp #content .post .comments #idc-cover {
   margin-bottom: 0;
 }
-/* line 488 */
+/* line 491 */
 body.bp #content .post .comments .idc-right {
   float: right;
 }
-/* line 494 */
+/* line 497 */
 body.bp #content .pagination-links, body.bp #content .post-navigation {
   font-size: 12px;
   margin: 8px 12px 0px 12px;
   padding: 6px 0 0 0;
   border-top: #dfe4ec solid 1px;
 }
-/* line 499 */
+/* line 502 */
 body.bp #content .pagination-links .current-page, body.bp #content .post-navigation .current-page {
   font-weight: bold;
 }
-/* line 503 */
+/* line 506 */
 body.bp #content .archive-links {
   font-size: 12px;
   margin: 0 12px;
 }
-/* line 507 */
+/* line 510 */
 body.bp #content .pagination-links:before {
   content: 'Pages: ';
 }
