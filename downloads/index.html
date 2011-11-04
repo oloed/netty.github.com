@@ -1,0 +1,127 @@
+<html>
+  <head>
+    <title>
+      Netty: Downloads
+    </title>
+    <link href='/images/favicon.ico' rel='shortcut icon' />
+    <link href='/stylesheets/screen.css' media='screen, projection' rel='stylesheet' type='text/css' />
+    <link href='/stylesheets/print.css' media='print' rel='stylesheet' type='text/css' />
+    <!--[if IE]>
+      <link href='/stylesheets/ie.css' media='screen, projection' rel='stylesheet' type='text/css' />
+    <![endif]-->
+    <link href='http://alexgorbatchev.com/pub/sh/current/styles/shCore.css' rel='stylesheet' type='text/css' />
+    <link href='http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css' rel='stylesheet' type='text/css' />
+    <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js' type='text/javascript'></script>
+    <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPlain.js' type='text/javascript'></script>
+    <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushXml.js' type='text/javascript'></script>
+    <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushBash.js' type='text/javascript'></script>
+    <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJava.js' type='text/javascript'></script>
+  </head>
+  <body class='bp'>
+    <div id='container'>
+      <div id='header'>
+        <div id='logo'>
+          <a href="/"><img src="/images/logo.png" /><h1 id="project_name"><span class="large">Netty</span><span class="small">project</span></a></h1></a>
+        </div>
+        <div id='navbar'>
+          <ul>
+            <li>
+              <a href='/'>Home</a>
+            </li>
+            <li>
+              <a href='/docs/'>Documentation</a>
+            </li>
+            <li>
+              <a href='/community/'>Get Involved</a>
+            </li>
+            <li>
+              <a href='/blog/'>Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div id='searchbar'>
+          <div id='cse-search-form'></div>
+          <script src='//www.google.com/jsapi' type='text/javascript'></script>
+          <script type='text/javascript'>
+            //<![CDATA[
+              google.load('search', '1', {language : 'en'});
+              google.setOnLoadCallback(function() {
+                var customSearchControl = new google.search.CustomSearchControl('016348183754172014713:rhhtb6ffqhg');
+                customSearchControl.setResultSetSize(google.search.Search.LARGE_RESULTSET);
+                var options = new google.search.DrawOptions();
+                options.setAutoComplete(true);
+                options.enableSearchboxOnly("http://www.google.com/cse?cx=016348183754172014713:rhhtb6ffqhg");
+                customSearchControl.draw('cse-search-form', options);
+              }, true);
+            //]]>
+          </script>
+          <link href='//www.google.com/cse/style/look/default.css' rel='stylesheet' type='text/css' />
+        </div>
+      </div>
+      <div id='content' lang='en'>
+        <h2>Downloads</h2>
+        <p class='notice'>
+          Netty is distributed under <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>. Please see the enclosed <tt>NOTICE.txt</tt>, <tt>COPYRIGHT.txt</tt>, and <tt>LICENSE.txt</tt> for more information.
+        </p>
+        <ul>
+          <li>
+            Stable release: <a href="netty-3.2.6.Final-dist.tar.bz2"><tt>netty-3.2.6.Final-dist.tar.bz2</tt></a>
+            <span class='small'>
+              (22-Oct-2011)
+            </span>
+          </li>
+        </ul>
+        <h3>Dependencies</h3>
+        <p>Please note that Netty has <em>no mandatory external dependencies</em>. JDK 1.5 or above is all that you need to run Netty. However, the unstable releases might require a newer JDK version.</p>
+        <h3>Getting notified on a new release</h3>
+        <p>You can either subscribe to <a href="../blog/">our official blog</a> or follow <a href="https://twitter.com/netty_project">@netty_project</a> at Twitter.</p>
+        <h3>Downloading from Maven 2 repository</h3>
+        <p>First off, add the following repository section to your <tt>pom.xml</tt> or <tt>~/.m2/settings.xml</tt>:</p>
+        <pre class='brush: xml'>&lt;repositories&gt;&#x000A;  ...&#x000A;  &lt;repository&gt;&#x000A;    &lt;id&gt;repository.jboss.org&lt;/id&gt;&#x000A;    &lt;url&gt;https://repository.jboss.org/nexus/content/repositories/releases/&lt;/url&gt;&#x000A;    &lt;snapshots&gt;&#x000A;      &lt;enabled&gt;false&lt;/enabled&gt;&#x000A;    &lt;/snapshots&gt;&#x000A;  &lt;/repository&gt;&#x000A;  ...&#x000A;&lt;/repositories&gt;</pre>
+        <p>And then add the following dependency section to your <tt>pom.xml</tt>:</p>
+        <pre class='brush: xml'>&lt;dependencies&gt;&#x000A;  ...&#x000A;  &lt;dependency&gt;&#x000A;    &lt;groupId&gt;org.jboss.netty&lt;/groupId&gt;&#x000A;    &lt;artifactId&gt;netty&lt;/artifactId&gt;&#x000A;    &lt;version&gt;X.Y.Z.Q&lt;/version&gt;&#x000A;    &lt;scope&gt;compile&lt;/scope&gt;&#x000A;  &lt;/dependency&gt;&#x000A;  ...&#x000A;&lt;/dependencies&gt;</pre>
+        <h3>Previous releases</h3>
+        <p>All previous releases can be downloaded from <a href="deprecated.html">here</a>.</p>
+      </div>
+      <div id='sidebar'>
+        <div id='quicklinks'>
+          <ul>
+            <li class='highlight'>
+              <a href='/downloads/' id='download_now'>Download now</a>
+            </li>
+            <li>
+              <a href='https://github.com/netty/netty/' id='view_on_github'>View on Github</a>
+            </li>
+            <li>
+              <a href='http://stackoverflow.com/questions/tagged/netty' id='stackoverflow'>Ask questions</a>
+            </li>
+            <li>
+              <a href='https://twitter.com/netty_project' id='follow_us_at_twitter'>Follow at Twitter</a>
+            </li>
+          </ul>
+        </div>
+        <div id='testimonial'>
+          <h2>Testimonial</h2>
+          <blockquote>Netty proved in&shy;stru&shy;ment&shy;al in the ar&shy;chi&shy;tec&shy;ture of a re&shy;place&shy;ment of an ex&shy;ist&shy;ing high-speed serv&shy;er that parses and caches live stream&shy;ing quotes. Un&shy;der stress tests, the new serv&shy;er could parse and store in ex&shy;cess of 260,000 quotes/sec, a fig&shy;ure not re&shy;motely pos&shy;sible with block&shy;ing I/O. Netty's well-doc&shy;u&shy;mented API, ex&shy;cel&shy;lent ex&shy;amples and first-class sup&shy;port made de&shy;vel&shy;op&shy;ment a pleas&shy;ure and un&shy;locked the power of Java NIO. It is, hands-down, my first choice for a net&shy;work&shy;ing lib&shy;rary.</blockquote>
+          <div class='author'>
+            Greg Haines, Ned Davis Research, Inc.
+          </div>
+          <div class='readmore'>
+            <a href='/testimonials'>(Read more..)</a>
+          </div>
+        </div>
+      </div>
+      <div id='footer'>
+        <div class='legal'>
+          <a href="/">The Netty project</a> is a member of the <a href="http://jboss.org/">JBoss Community</a>.
+          Copyright 2009-2011 <a href="http://www.redhat.com/">Red Hat, Inc.</a>
+        </div>
+      </div>
+      <script type='text/javascript'>
+        //<![CDATA[
+          SyntaxHighlighter.all()
+        //]]>
+      </script>
+    </div>
+  </body>
+</html>
