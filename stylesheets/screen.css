@@ -1065,7 +1065,7 @@ body.bp #content .post .body {
 body.bp #content .pagination-links, body.bp #content .post-navigation {
   font-size: 12px;
   margin: 0 12px;
-  padding: 6px 0;
+  padding: 6px 0 0 0;
   border-top: #dfe4ec solid 1px;
 }
 /* line 441 */
@@ -1073,6 +1073,11 @@ body.bp #content .pagination-links .current-page, body.bp #content .post-navigat
   font-weight: bold;
 }
 /* line 445 */
+body.bp #content .archive-links {
+  font-size: 12px;
+  margin: 0 12px;
+}
+/* line 449 */
 body.bp #content .pagination-links:before {
   content: 'Pages: ';
 }
