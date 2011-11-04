@@ -1032,3 +1032,47 @@ body.bp #content .panel-wrapper .panel p {
   -moz-hyphens: auto;
   hyphens: auto;
 }
+/* line 412 */
+body.bp #content .post {
+  margin: 0;
+}
+/* line 414 */
+body.bp #content .post h2 {
+  margin-bottom: 0;
+}
+/* line 416 */
+body.bp #content .post h2 a {
+  text-decoration: none;
+  color: #2f3d50;
+}
+/* line 421 */
+body.bp #content .post .author {
+  text-align: left;
+  font-size: 12px;
+  margin: 0 12px;
+  padding-bottom: 6px;
+  border-bottom: #dfe4ec solid 1px;
+}
+/* line 426 */
+body.bp #content .post .author:before {
+  content: 'Posted by ';
+}
+/* line 431 */
+body.bp #content .post .body {
+  margin: 12px 0 0 0;
+}
+/* line 436 */
+body.bp #content .pagination-links, body.bp #content .post-navigation {
+  font-size: 12px;
+  margin: 0 12px;
+  padding: 6px 0;
+  border-top: #dfe4ec solid 1px;
+}
+/* line 441 */
+body.bp #content .pagination-links .current-page, body.bp #content .post-navigation .current-page {
+  font-weight: bold;
+}
+/* line 445 */
+body.bp #content .pagination-links:before {
+  content: 'Pages: ';
+}

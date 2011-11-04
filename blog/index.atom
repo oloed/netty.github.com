@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<feed xml:lang='en-US' xmlns='http://www.w3.org/2005/Atom'>
+  <id>http://netty.io/</id>
+  <title>Netty</title>
+  <updated>2000-01-01T00:00:00Z</updated>
+  <link href='http://netty.io/blog/index.atom' rel='self' type='application/atom+xml' />
+  <link href='http://netty.io/' rel='alternate' type='text/html' />
+  <entry>
+    <id>http://netty.io/blog/2000/01/01/announcing-new-web-site.html</id>
+    <title>Announcing New Web Site</title>
+    <updated>2000-01-01T00:00:00Z</updated>
+    <link href='http://netty.io/blog/2000/01/01/announcing-new-web-site.html' rel='alternate' type='text/html' />
+    <author>
+      <name>Trustin Lee</name>
+    </author>
+    <summary>
+      Coming soon. Stay tuned!
+            ......
+    </summary>
+    <content type='html'>
+      &lt;p&gt;Coming soon. Stay tuned!&lt;/p&gt;
+    </content>
+  </entry>
+</feed>
