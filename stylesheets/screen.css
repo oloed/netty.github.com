@@ -154,7 +154,7 @@ a img {
   font-style: italic;
 }
 
-/* line 25 */
+/* line 27 */
 body.bp {
   line-height: 1.5;
   font-family: "Liberation Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -474,7 +474,7 @@ body.bp .removed {
   background: #990000;
   color: white;
 }
-/* line 31 */
+/* line 33 */
 body.bp #container {
   width: 950px;
   margin: 0 auto;
@@ -482,7 +482,7 @@ body.bp #container {
   *zoom: 1;
   background: url(../images/header.png) no-repeat right top;
 }
-/* line 36 */
+/* line 38 */
 body.bp #header {
   margin: 8px 0 8px 0;
   padding-bottom: 0;
@@ -491,7 +491,7 @@ body.bp #header {
   border-bottom-color: #afbdcf;
   border-bottom-style: solid;
 }
-/* line 46 */
+/* line 48 */
 body.bp #header #logo {
   display: inline;
   float: left;
@@ -504,17 +504,17 @@ body.bp #header #logo {
 * html body.bp #header #logo {
   overflow-x: hidden;
 }
-/* line 51 */
+/* line 53 */
 body.bp #header #logo a {
   text-decoration: none;
   color: #2f3d50;
 }
-/* line 56 */
+/* line 58 */
 body.bp #header #logo img {
   float: left;
   padding-left: 8px;
 }
-/* line 61 */
+/* line 63 */
 body.bp #header #logo #project_name {
   text-shadow: #aaaaaa 1px 2px 1px;
   width: 128px;
@@ -523,14 +523,14 @@ body.bp #header #logo #project_name {
   margin: 0 0 0 76px;
   color: #2f3d50;
 }
-/* line 69 */
+/* line 71 */
 body.bp #header #logo #project_name .large {
   line-height: 18px;
   font-size: 36px;
   margin: 12px 0 0 0;
   display: block;
 }
-/* line 76 */
+/* line 78 */
 body.bp #header #logo #project_name .small {
   font-size: 28px;
   line-height: 1em;
@@ -538,7 +538,7 @@ body.bp #header #logo #project_name .small {
   margin: 0 0 0 41px;
   color: #556e90;
 }
-/* line 87 */
+/* line 89 */
 body.bp #header #navbar {
   display: inline;
   float: left;
@@ -551,13 +551,13 @@ body.bp #header #navbar {
 * html body.bp #header #navbar {
   overflow-x: hidden;
 }
-/* line 92 */
+/* line 94 */
 body.bp #header #navbar ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 97 */
+/* line 99 */
 body.bp #header #navbar ul li {
   display: inline-block;
   *display: inline;
@@ -582,7 +582,12 @@ body.bp #header #navbar ul li {
   -khtml-border-top-right-radius: 4px;
   border-top-right-radius: 4px;
 }
-/* line 110 */
+/* line 112 */
+body.bp #header #navbar ul li.current {
+  border-color: #afbdcf;
+  background-color: #dfe4ec;
+}
+/* line 117 */
 body.bp #header #navbar ul li:hover {
   -moz-transition: all 0.5s;
   -webkit-transition: all 0.5s;
@@ -591,7 +596,7 @@ body.bp #header #navbar ul li:hover {
   background-color: #ffca4d;
   border-color: #afbdcf;
 }
-/* line 116 */
+/* line 123 */
 body.bp #header #navbar ul li a {
   color: #2f3d50;
   text-shadow: white 1px 1px 1px;
@@ -599,7 +604,7 @@ body.bp #header #navbar ul li a {
   font-weight: bold;
   text-decoration: none;
 }
-/* line 130 */
+/* line 136 */
 body.bp #header #searchbar {
   display: inline;
   float: left;
@@ -614,36 +619,36 @@ body.bp #header #searchbar {
 * html body.bp #header #searchbar {
   overflow-x: hidden;
 }
-/* line 137 */
+/* line 143 */
 body.bp #header #searchbar #cse-search-form div {
   margin-right: 0;
   padding-right: 0;
 }
-/* line 144 */
+/* line 150 */
 body.bp #header #searchbar #cse-search-form * form, body.bp #header #searchbar #cse-search-form * table {
   margin: 0;
   padding: 0;
 }
-/* line 148 */
+/* line 154 */
 body.bp #header #searchbar #cse-search-form * form {
   display: inline;
   margin: 0;
   padding: 0;
 }
-/* line 153 */
+/* line 159 */
 body.bp #header #searchbar #cse-search-form * table {
   idth: 224px;
 }
-/* line 156 */
+/* line 162 */
 body.bp #header #searchbar #cse-search-form * td {
   margin: 0;
   padding: 0;
 }
-/* line 162 */
+/* line 168 */
 body.bp #header #searchbar .gsc-branding {
   display: none;
 }
-/* line 166 */
+/* line 172 */
 body.bp #header #searchbar .gsc-input {
   width: 224px;
   margin: 0;
@@ -665,11 +670,11 @@ body.bp #header #searchbar .gsc-input {
   border-top-right-radius: 4px;
   background-position: center !important;
 }
-/* line 176 */
+/* line 182 */
 body.bp #header #searchbar .gsc-search-button, body.bp #header #searchbar .gsc-clear-button {
   display: none;
 }
-/* line 182 */
+/* line 188 */
 body.bp #content {
   display: inline;
   float: left;
@@ -682,7 +687,7 @@ body.bp #content {
 * html body.bp #content {
   overflow-x: hidden;
 }
-/* line 189 */
+/* line 195 */
 body.bp #sidebar {
   display: inline;
   float: left;
@@ -694,18 +699,18 @@ body.bp #sidebar {
 * html body.bp #sidebar {
   overflow-x: hidden;
 }
-/* line 194 */
+/* line 200 */
 body.bp #sidebar #quicklinks {
   padding-top: 4px;
   margin-bottom: 20px;
 }
-/* line 197 */
+/* line 203 */
 body.bp #sidebar #quicklinks ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 201 */
+/* line 207 */
 body.bp #sidebar #quicklinks ul li {
   border-style: solid;
   border-color: #556e90;
@@ -726,7 +731,7 @@ body.bp #sidebar #quicklinks ul li {
   padding: 8px 12px;
   text-transform: uppercase;
 }
-/* line 208 */
+/* line 214 */
 body.bp #sidebar #quicklinks ul li.highlight {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(50%, #ffd980), color-stop(100%, #ffca4d));
   background-image: -webkit-linear-gradient(#ffffff, #ffd980, #ffca4d);
@@ -735,7 +740,7 @@ body.bp #sidebar #quicklinks ul li.highlight {
   background-image: -ms-linear-gradient(#ffffff, #ffd980, #ffca4d);
   background-image: linear-gradient(#ffffff, #ffd980, #ffca4d);
 }
-/* line 215 */
+/* line 221 */
 body.bp #sidebar #quicklinks ul li a {
   color: black;
   text-shadow: white 1px 1px 1px;
@@ -745,7 +750,7 @@ body.bp #sidebar #quicklinks ul li a {
   padding-left: 22px;
   padding-bottom: 22px;
 }
-/* line 226 */
+/* line 232 */
 body.bp #sidebar #quicklinks ul li a#download_now {
   background: url(../images/downloads.png) no-repeat 0 0;
   -moz-background-size: 16px;
@@ -753,7 +758,7 @@ body.bp #sidebar #quicklinks ul li a#download_now {
   -o-background-size: 16px;
   background-size: 16px;
 }
-/* line 230 */
+/* line 236 */
 body.bp #sidebar #quicklinks ul li a#view_on_github {
   background: url(../images/github.png) no-repeat 0 0;
   -moz-background-size: 16px;
@@ -761,7 +766,7 @@ body.bp #sidebar #quicklinks ul li a#view_on_github {
   -o-background-size: 16px;
   background-size: 16px;
 }
-/* line 234 */
+/* line 240 */
 body.bp #sidebar #quicklinks ul li a#stackoverflow {
   background: url(../images/stackoverflow.png) no-repeat 0 0;
   -moz-background-size: 16px;
@@ -769,7 +774,7 @@ body.bp #sidebar #quicklinks ul li a#stackoverflow {
   -o-background-size: 16px;
   background-size: 16px;
 }
-/* line 238 */
+/* line 244 */
 body.bp #sidebar #quicklinks ul li a#chat_with_us {
   background: url(../images/chat.png) no-repeat 0 0;
   -moz-background-size: 16px;
@@ -777,7 +782,7 @@ body.bp #sidebar #quicklinks ul li a#chat_with_us {
   -o-background-size: 16px;
   background-size: 16px;
 }
-/* line 242 */
+/* line 248 */
 body.bp #sidebar #quicklinks ul li a#follow_us_at_twitter {
   background: url(../images/twitter.png) no-repeat 0 0;
   -moz-background-size: 16px;
@@ -785,16 +790,16 @@ body.bp #sidebar #quicklinks ul li a#follow_us_at_twitter {
   -o-background-size: 16px;
   background-size: 16px;
 }
-/* line 252 */
+/* line 258 */
 body.bp #sidebar #testimonial h2 {
   font-size: 17px;
   margin: 0 0 0 11px;
 }
-/* line 255 */
+/* line 261 */
 body.bp #sidebar #testimonial h2:after {
   content: ':';
 }
-/* line 259 */
+/* line 265 */
 body.bp #sidebar #testimonial blockquote {
   font-size: 10px;
   -moz-border-radius: 4px;
@@ -813,24 +818,24 @@ body.bp #sidebar #testimonial blockquote {
   hyphens: auto;
   text-align: justify;
 }
-/* line 272 */
+/* line 278 */
 body.bp #sidebar #testimonial .author {
   margin-top: 4px;
   margin-right: 0;
   text-align: right;
   font-size: 11px;
 }
-/* line 277 */
+/* line 283 */
 body.bp #sidebar #testimonial .author:before {
   content: "\2014";
 }
-/* line 281 */
+/* line 287 */
 body.bp #sidebar #testimonial .readmore {
   text-align: right;
   margin-right: 0;
   font-size: 10px;
 }
-/* line 289 */
+/* line 295 */
 body.bp #footer {
   display: inline;
   float: left;
@@ -849,7 +854,7 @@ body.bp #footer {
 * html body.bp #footer {
   overflow-x: hidden;
 }
-/* line 303 */
+/* line 309 */
 body.bp #footer a {
   color: #2f3d50;
 }
@@ -918,44 +923,44 @@ form.bp textarea {
   height: 250px;
 }
 
-/* line 314 */
+/* line 320 */
 body.bp #content h1, body.bp #content h2 {
   margin: 0 0 4px 10px;
 }
-/* line 318 */
+/* line 324 */
 body.bp #content h3, body.bp #content h4, body.bp #content h5, body.bp #content h6 {
   margin: 0 0 10px 12px;
 }
-/* line 322 */
+/* line 328 */
 body.bp #content p, body.bp #content blockquote {
   text-align: justify;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto;
 }
-/* line 329 */
+/* line 335 */
 body.bp #content p, body.bp #content ul, body.bp #content ol {
   margin: 0 14px 14px 24px;
 }
-/* line 333 */
+/* line 339 */
 body.bp #content div {
   margin-left: 24px;
   margin-right: 14px;
 }
-/* line 340 */
+/* line 346 */
 body.bp #content pre {
   margin: 0 14px 14px 24px;
   white-space: pre-wrap;
   padding: 8px;
 }
-/* line 346 */
+/* line 352 */
 body.bp #content .deck {
   color: #2f3d50;
   font-size: 18px;
   text-align: center;
   margin: 6px 0 4px 0;
 }
-/* line 352 */
+/* line 358 */
 body.bp #content .deck em {
   background-color: #ffca4d;
   -moz-border-radius: 4px;
@@ -966,7 +971,7 @@ body.bp #content .deck em {
   border-radius: 4px;
   padding: 0.05em 0.25em 0.1em 0.25em;
 }
-/* line 359 */
+/* line 365 */
 body.bp #content blockquote {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -982,30 +987,68 @@ body.bp #content blockquote {
   padding: 10px 20px 1px 24px;
   font-style: normal;
 }
-/* line 369 */
+/* line 375 */
 body.bp #content blockquote p {
   margin: 0 0 0.8em 0;
 }
-/* line 372 */
+/* line 378 */
 body.bp #content blockquote ul {
   margin-top: 0.8em;
   margin-left: 0.8em;
 }
-/* line 378 */
+/* line 384 */
 body.bp #content .author {
   text-align: right;
   margin-top: 0.3em;
   margin-bottom: 1.3em;
 }
-/* line 380 */
+/* line 386 */
 body.bp #content .author:before {
   content: "\2014";
 }
-/* line 389 */
-body.bp #content .panel-wrapper {
-  margin: 0 0 0 82px;
+/* line 395 */
+body.bp #content #stableReleaseDocs, body.bp #content #unstableReleaseDocs {
+  display: block;
+  float: left;
+  width: 290px !important;
+  border: #556e90 solid 1px;
+  padding: 10px 16px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(50%, #cfd7e2), color-stop(100%, #afbdcf));
+  background-image: -webkit-linear-gradient(#ffffff, #cfd7e2, #afbdcf);
+  background-image: -moz-linear-gradient(#ffffff, #cfd7e2, #afbdcf);
+  background-image: -o-linear-gradient(#ffffff, #cfd7e2, #afbdcf);
+  background-image: -ms-linear-gradient(#ffffff, #cfd7e2, #afbdcf);
+  background-image: linear-gradient(#ffffff, #cfd7e2, #afbdcf);
 }
-/* line 391 */
+/* line 404 */
+body.bp #content #stableReleaseDocs h3, body.bp #content #unstableReleaseDocs h3 {
+  text-align: center;
+  font-size: 20px;
+  margin: 0 0 8px 0;
+}
+/* line 409 */
+body.bp #content #stableReleaseDocs ul, body.bp #content #unstableReleaseDocs ul {
+  margin: 0 0 0 0;
+}
+/* line 414 */
+body.bp #content #stableReleaseDocs {
+  margin: 0 8px 8px 28px;
+}
+/* line 417 */
+body.bp #content #unstableReleaseDocs {
+  margin: 0 0 8px 8px;
+}
+/* line 421 */
+body.bp #content .panel-wrapper {
+  margin: 16px 0 0 82px;
+}
+/* line 423 */
 body.bp #content .panel-wrapper .panel {
   display: block;
   float: left;
@@ -1027,33 +1070,33 @@ body.bp #content .panel-wrapper .panel {
   background-image: -ms-linear-gradient(#ffffff, #cfd7e2, #afbdcf);
   background-image: linear-gradient(#ffffff, #cfd7e2, #afbdcf);
 }
-/* line 402 */
+/* line 434 */
 body.bp #content .panel-wrapper .panel h2 {
   text-align: center;
   font-size: 20px;
   margin: 0 0 8px 0;
 }
-/* line 407 */
+/* line 439 */
 body.bp #content .panel-wrapper .panel p {
   margin: 0 0 0 0;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto;
 }
-/* line 416 */
+/* line 448 */
 body.bp #content .post {
   margin: 0;
 }
-/* line 418 */
+/* line 450 */
 body.bp #content .post h2 {
   margin-bottom: 0;
 }
-/* line 420 */
+/* line 452 */
 body.bp #content .post h2 a {
   text-decoration: none;
   color: #2f3d50;
 }
-/* line 425 */
+/* line 457 */
 body.bp #content .post .author {
   text-align: left;
   font-size: 12px;
@@ -1061,31 +1104,56 @@ body.bp #content .post .author {
   padding-bottom: 6px;
   border-bottom: #dfe4ec solid 1px;
 }
-/* line 430 */
+/* line 462 */
 body.bp #content .post .author:before {
   content: 'Posted by ';
 }
-/* line 435 */
+/* line 467 */
 body.bp #content .post .body {
   margin: 12px 0 0 0;
 }
-/* line 440 */
+/* line 470 */
+body.bp #content .post .comments {
+  margin: 12px;
+}
+/* line 473 */
+body.bp #content .post .comments div, body.bp #content .post .comments p, body.bp #content .post .comments blockquote, body.bp #content .post .comments pre, body.bp #content .post .comments span, body.bp #content .post .comments form {
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 479 */
+body.bp #content .post .comments h1, body.bp #content .post .comments h2, body.bp #content .post .comments h3, body.bp #content .post .comments h4, body.bp #content .post .comments h5, body.bp #content .post .comments h6, body.bp #content .post .comments ul {
+  margin: 0;
+}
+/* line 482 */
+body.bp #content .post .comments .idc-c-t-inner textarea {
+  width: 100% !important;
+}
+/* line 485 */
+body.bp #content .post .comments #idc-cover {
+  margin-bottom: 0;
+}
+/* line 488 */
+body.bp #content .post .comments .idc-right {
+  float: right;
+}
+/* line 494 */
 body.bp #content .pagination-links, body.bp #content .post-navigation {
   font-size: 12px;
-  margin: 0 12px;
+  margin: 8px 12px 0px 12px;
   padding: 6px 0 0 0;
   border-top: #dfe4ec solid 1px;
 }
-/* line 445 */
+/* line 499 */
 body.bp #content .pagination-links .current-page, body.bp #content .post-navigation .current-page {
   font-weight: bold;
 }
-/* line 449 */
+/* line 503 */
 body.bp #content .archive-links {
   font-size: 12px;
   margin: 0 12px;
 }
-/* line 453 */
+/* line 507 */
 body.bp #content .pagination-links:before {
   content: 'Pages: ';
 }
