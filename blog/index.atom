@@ -21,7 +21,7 @@
             In this announcement, I'd like to mention what this means for us:
             
             
-            The user forum is replaced with StackOverflow. Please don't forget to tag your questions with 'netty'.
+            The user forum is replaced with StackOverflow. Please don't forget to tag your questions with 'jboss-netty'.
             The developer forum is replaced with a Google Group. Invitations will be sent to the subscribers.
             JIRA is replaced with the Github issue tracker.
             Wiki is replaced with the Github wiki.
@@ -35,7 +35,7 @@
             &lt;p&gt;In this announcement, I'd like to mention what this means for us:&lt;/p&gt;
             
             &lt;ul&gt;
-            &lt;li&gt;The user forum is replaced with &lt;a href=&quot;http://stackoverflow.com/questions/tagged/netty&quot;&gt;StackOverflow&lt;/a&gt;. Please don't forget to tag your questions with 'netty'.&lt;/li&gt;
+            &lt;li&gt;The user forum is replaced with &lt;a href=&quot;http://stackoverflow.com/questions/tagged/jboss-netty&quot;&gt;StackOverflow&lt;/a&gt;. Please don't forget to tag your questions with 'jboss-netty'.&lt;/li&gt;
             &lt;li&gt;The developer forum is replaced with a &lt;a href=&quot;https://groups.google.com/d/forum/netty&quot;&gt;Google Group&lt;/a&gt;. Invitations will be sent to the subscribers.&lt;/li&gt;
             &lt;li&gt;JIRA is replaced with &lt;a href=&quot;https://github.com/netty/netty/issues&quot;&gt;the Github issue tracker&lt;/a&gt;.&lt;/li&gt;
             &lt;li&gt;Wiki is replaced with &lt;a href=&quot;https://github.com/netty/netty/wiki&quot;&gt;the Github wiki&lt;/a&gt;.&lt;/li&gt;
