@@ -15,10 +15,14 @@
     </author>
     <summary>
       As you might have noticed already, StackOverflow moderators decided to deprecate the 'netty' tag with the 'jboss-netty' tag and re-tagged all Netty questions with the new tag.  If you are going to post a new Netty question, please make sure to tag it with 'jboss-netty', not 'netty'.
+            
+            Also, if you have enough total answer score, consider voting for tag synonyms.
             ......
     </summary>
     <content type='html'>
       &lt;p&gt;As you might have noticed already, StackOverflow moderators decided to deprecate the 'netty' tag with the 'jboss-netty' tag and re-tagged all Netty questions with the new tag.  If you are going to post a new Netty question, please make sure to tag it with '&lt;a href=&quot;http://stackoverflow.com/questions/tagged/jboss-netty&quot;&gt;jboss-netty&lt;/a&gt;', not 'netty'.&lt;/p&gt;
+            
+            &lt;p&gt;Also, if you have enough total answer score, consider &lt;a href=&quot;http://stackoverflow.com/tags/jboss-netty/synonyms&quot;&gt;voting for tag synonyms&lt;/a&gt;.&lt;/p&gt;
     </content>
   </entry>
   <entry>
