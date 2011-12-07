@@ -16,13 +16,13 @@
     <summary>
       Recently we announced our new web site at http://netty.io/ but Red Hat have informed me that there are some outstanding issues related to the migration. As such we’ve been requested to move back to the original site at http://jboss.org/netty/ until these have been addressed. I apologize for any confusion caused.
             
-            Hopefully we’ll be able to continue using StackOverflow and Google Groups as the Netty community agreed.
+            Hopefully we will be able to continue using StackOverflow and Google Groups as the Netty community agreed.
             ......
     </summary>
     <content type='html'>
       &lt;p&gt;Recently we announced our new web site at &lt;a href=&quot;http://netty.io/&quot;&gt;http://netty.io/&lt;/a&gt; but Red Hat have informed me that there are some outstanding issues related to the migration. As such we’ve been requested to move back to the original site at &lt;a href=&quot;http://jboss.org/netty/&quot;&gt;http://jboss.org/netty/&lt;/a&gt; until these have been addressed. I apologize for any confusion caused.&lt;/p&gt;
             
-            &lt;p&gt;Hopefully we’ll be able to continue using StackOverflow and Google Groups as the Netty community agreed.&lt;/p&gt;
+            &lt;p&gt;Hopefully we will be able to continue using StackOverflow and Google Groups as the Netty community agreed.&lt;/p&gt;
     </content>
   </entry>
   <entry>
