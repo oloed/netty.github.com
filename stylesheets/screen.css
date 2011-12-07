@@ -480,7 +480,6 @@ body.bp #container {
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
-  background: url(../images/header.png) no-repeat right top;
 }
 /* line 38 */
 body.bp #header {

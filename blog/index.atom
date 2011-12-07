@@ -2,27 +2,27 @@
 <feed xml:lang='en-US' xmlns='http://www.w3.org/2005/Atom'>
   <id>http://netty.io/</id>
   <title>Netty</title>
-  <updated>2011-11-08T00:00:00Z</updated>
+  <updated>2011-11-10T00:00:00Z</updated>
   <link href='http://netty.io/blog/index.atom' rel='self' type='application/atom+xml' />
   <link href='http://netty.io/' rel='alternate' type='text/html' />
   <entry>
-    <id>http://netty.io/blog/2011/11/08/</id>
-    <title>An update on StackOverflow tags</title>
-    <updated>2011-11-08T00:00:00Z</updated>
-    <link href='http://netty.io/blog/2011/11/08/' rel='alternate' type='text/html' />
+    <id>http://netty.io/blog/2011/11/10/</id>
+    <title>Additional update on the new web site</title>
+    <updated>2011-11-10T00:00:00Z</updated>
+    <link href='http://netty.io/blog/2011/11/10/' rel='alternate' type='text/html' />
     <author>
       <name><a href="http://gleamynode.net/">Trustin Lee</a></name>
     </author>
     <summary>
-      As you might have noticed already, StackOverflow moderators decided to deprecate the 'netty' tag with the 'jboss-netty' tag and re-tagged all Netty questions with the new tag.  If you are going to post a new Netty question, please make sure to tag it with 'jboss-netty', not 'netty'.
+      Recently we announced our new web site at http://netty.io/ but Red Hat have informed me that there are some outstanding issues related to the migration. As such we’ve been requested to move back to the original site at http://jboss.org/netty/ until these have been addressed. I apologize for any confusion caused.
             
-            Also, if you have enough total answer score, consider voting for tag synonyms.
+            Hopefully we’ll be able to continue using StackOverflow and Google Groups as the Netty community agreed.
             ......
     </summary>
     <content type='html'>
-      &lt;p&gt;As you might have noticed already, StackOverflow moderators decided to deprecate the 'netty' tag with the 'jboss-netty' tag and re-tagged all Netty questions with the new tag.  If you are going to post a new Netty question, please make sure to tag it with '&lt;a href=&quot;http://stackoverflow.com/questions/tagged/jboss-netty&quot;&gt;jboss-netty&lt;/a&gt;', not 'netty'.&lt;/p&gt;
+      &lt;p&gt;Recently we announced our new web site at &lt;a href=&quot;http://netty.io/&quot;&gt;http://netty.io/&lt;/a&gt; but Red Hat have informed me that there are some outstanding issues related to the migration. As such we’ve been requested to move back to the original site at &lt;a href=&quot;http://jboss.org/netty/&quot;&gt;http://jboss.org/netty/&lt;/a&gt; until these have been addressed. I apologize for any confusion caused.&lt;/p&gt;
             
-            &lt;p&gt;Also, if you have enough total answer score, consider &lt;a href=&quot;http://stackoverflow.com/tags/jboss-netty/synonyms&quot;&gt;voting for tag synonyms&lt;/a&gt;.&lt;/p&gt;
+            &lt;p&gt;Hopefully we’ll be able to continue using StackOverflow and Google Groups as the Netty community agreed.&lt;/p&gt;
     </content>
   </entry>
   <entry>
@@ -41,7 +41,7 @@
               In this announcement, I'd like to mention what this means for us:
               
               
-              The user forum is replaced with StackOverflow. Please don't forget to tag your questions with 'jboss-netty'.
+              The user forum is replaced with StackOverflow. Please don't forget to tag your questions with 'netty'.
               The developer forum is replaced with a Google Group. Invitations will be sent to the subscribers.
               JIRA is replaced with the Github issue tracker.
               Wiki is replaced with the Github wiki.
@@ -55,7 +55,7 @@
               &lt;p&gt;In this announcement, I'd like to mention what this means for us:&lt;/p&gt;
               
               &lt;ul&gt;
-              &lt;li&gt;The user forum is replaced with &lt;a href=&quot;http://stackoverflow.com/questions/tagged/jboss-netty&quot;&gt;StackOverflow&lt;/a&gt;. Please don't forget to tag your questions with 'jboss-netty'.&lt;/li&gt;
+              &lt;li&gt;The user forum is replaced with &lt;a href=&quot;http://stackoverflow.com/questions/tagged/netty&quot;&gt;StackOverflow&lt;/a&gt;. Please don't forget to tag your questions with 'netty'.&lt;/li&gt;
               &lt;li&gt;The developer forum is replaced with a &lt;a href=&quot;https://groups.google.com/d/forum/netty&quot;&gt;Google Group&lt;/a&gt;. Invitations will be sent to the subscribers.&lt;/li&gt;
               &lt;li&gt;JIRA is replaced with &lt;a href=&quot;https://github.com/netty/netty/issues&quot;&gt;the Github issue tracker&lt;/a&gt;.&lt;/li&gt;
               &lt;li&gt;Wiki is replaced with &lt;a href=&quot;https://github.com/netty/netty/wiki&quot;&gt;the Github wiki&lt;/a&gt;.&lt;/li&gt;
