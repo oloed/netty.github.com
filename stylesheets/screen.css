@@ -1010,100 +1010,19 @@ body.bp #content .author:before {
   content: "\2014";
 }
 /* line 401 */
-body.bp #content #stableReleaseDocs, body.bp #content #unstableReleaseDocs {
-  display: block;
-  float: left;
-  width: 292px !important;
-  border: #556e90 solid 1px;
-  padding: 10px 16px;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -o-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -khtml-border-radius: 4px;
-  border-radius: 4px;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(50%, #cfd7e2), color-stop(100%, #afbdcf));
-  background-image: -webkit-linear-gradient(#ffffff, #cfd7e2, #afbdcf);
-  background-image: -moz-linear-gradient(#ffffff, #cfd7e2, #afbdcf);
-  background-image: -o-linear-gradient(#ffffff, #cfd7e2, #afbdcf);
-  background-image: -ms-linear-gradient(#ffffff, #cfd7e2, #afbdcf);
-  background-image: linear-gradient(#ffffff, #cfd7e2, #afbdcf);
-}
-/* line 410 */
-body.bp #content #stableReleaseDocs h3, body.bp #content #unstableReleaseDocs h3 {
-  text-align: center;
-  font-size: 20px;
-  margin: 0 0 8px 0;
-}
-/* line 415 */
-body.bp #content #stableReleaseDocs ul, body.bp #content #unstableReleaseDocs ul {
-  margin: 0 0 0 0;
-}
-/* line 420 */
-body.bp #content #stableReleaseDocs {
-  margin: 0 8px 8px 28px;
-}
-/* line 423 */
-body.bp #content #unstableReleaseDocs {
-  margin: 0 0 8px 8px;
-}
-/* line 427 */
-body.bp #content .panel-wrapper {
-  margin: 8px 0 8px 82px;
-}
-/* line 429 */
-body.bp #content .panel-wrapper .panel {
-  display: block;
-  float: left;
-  width: 224px !important;
-  border: #556e90 solid 1px;
-  margin: 12px 8px 0px 8px;
-  padding: 6px 16px 10px 16px;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -o-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -khtml-border-radius: 4px;
-  border-radius: 4px;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(50%, #cfd7e2), color-stop(100%, #afbdcf));
-  background-image: -webkit-linear-gradient(#ffffff, #cfd7e2, #afbdcf);
-  background-image: -moz-linear-gradient(#ffffff, #cfd7e2, #afbdcf);
-  background-image: -o-linear-gradient(#ffffff, #cfd7e2, #afbdcf);
-  background-image: -ms-linear-gradient(#ffffff, #cfd7e2, #afbdcf);
-  background-image: linear-gradient(#ffffff, #cfd7e2, #afbdcf);
-}
-/* line 439 */
-body.bp #content .panel-wrapper .panel h2 {
-  text-align: center;
-  font-size: 20px;
-  margin: 0 0 4px 0;
-}
-/* line 444 */
-body.bp #content .panel-wrapper .panel p {
-  margin: 0 0 0 0;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto;
-}
-/* line 450 */
-body.bp #content .panel-wrapper .panel em {
-  font-style: normal;
-  font-weight: bold;
-}
-/* line 457 */
 body.bp #content .post {
   margin: 0 0 12px 0;
 }
-/* line 459 */
+/* line 403 */
 body.bp #content .post h2 {
   margin-bottom: 0;
 }
-/* line 461 */
+/* line 405 */
 body.bp #content .post h2 a {
   text-decoration: none;
   color: #2f3d50;
 }
-/* line 466 */
+/* line 410 */
 body.bp #content .post .body {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -1115,101 +1034,101 @@ body.bp #content .post .body {
   padding: 14px 10px 6px 0px;
   margin-left: 10px;
 }
-/* line 471 */
+/* line 415 */
 body.bp #content .post .body #share-links {
   float: right;
   width: 110px;
   margin: 0 0 0 8px;
   padding: 0 !important;
 }
-/* line 476 */
+/* line 420 */
 body.bp #content .post .body #share-links div {
   margin: 0 !important;
 }
-/* line 482 */
+/* line 426 */
 body.bp #content .post .footer {
   margin: 0 0 0 12px;
   padding: 4px 0 0 0;
 }
-/* line 485 */
+/* line 429 */
 body.bp #content .post .footer .author {
   display: inline;
   font-size: 12px;
   margin: 0;
 }
-/* line 489 */
+/* line 433 */
 body.bp #content .post .footer .author:before {
   content: 'Posted by ';
 }
-/* line 493 */
+/* line 437 */
 body.bp #content .post .footer .comments-link {
   float: right;
   font-size: 12px;
 }
-/* line 497 */
+/* line 441 */
 body.bp #content .post .footer .comments {
   clear: both;
   margin: 6px 12px 0 0;
   padding-top: 8px;
   border-top: #afbdcf solid 1px;
 }
-/* line 503 */
+/* line 447 */
 body.bp #content .post .footer .comments #dsq-global-toolbar {
   margin: 0 !important;
   padding: 0 !important;
 }
-/* line 507 */
+/* line 451 */
 body.bp #content .post .footer .comments #dsq-global-toolbar .dsq-global-toolbar-left, body.bp #content .post .footer .comments #dsq-global-toolbar .dsq-global-toolbar-right {
   margin: 0 !important;
   padding: 0 !important;
 }
-/* line 510 */
+/* line 454 */
 body.bp #content .post .footer .comments #dsq-global-toolbar .dsq-global-toolbar-left li, body.bp #content .post .footer .comments #dsq-global-toolbar .dsq-global-toolbar-right li {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-/* line 517 */
+/* line 461 */
 body.bp #content .post .footer .comments .dsq-comment {
   margin-bottom: 0;
 }
-/* line 521 */
+/* line 465 */
 body.bp #content .post .footer .comments #dsq-footer {
   display: none;
 }
-/* line 525 */
+/* line 469 */
 body.bp #content .post .footer .comments div, body.bp #content .post .footer .comments p, body.bp #content .post .footer .comments blockquote, body.bp #content .post .footer .comments pre, body.bp #content .post .footer .comments span, body.bp #content .post .footer .comments form {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 531 */
+/* line 475 */
 body.bp #content .post .footer .comments h1, body.bp #content .post .footer .comments h2, body.bp #content .post .footer .comments h3, body.bp #content .post .footer .comments h4, body.bp #content .post .footer .comments h5, body.bp #content .post .footer .comments h6, body.bp #content .post .footer .comments ul {
   margin: 0 0 12px 0;
 }
-/* line 538 */
+/* line 482 */
 body.bp #content .pagination-links, body.bp #content .post-navigation {
   font-size: 12px;
   margin: 8px 12px 0 0;
   padding: 6px 0 0 0;
   border-top: #dfe4ec solid 1px;
 }
-/* line 543 */
+/* line 487 */
 body.bp #content .pagination-links .current-page, body.bp #content .post-navigation .current-page {
   font-weight: bold;
 }
-/* line 546 */
+/* line 490 */
 body.bp #content .pagination-links .previous, body.bp #content .pagination-links .next, body.bp #content .post-navigation .previous, body.bp #content .post-navigation .next {
   margin: 0;
 }
-/* line 550 */
+/* line 494 */
 body.bp #content .archive-links {
   font-size: 12px;
   margin: 0;
 }
-/* line 554 */
+/* line 498 */
 body.bp #content .pagination-links:before {
   content: 'Pages: ';
 }
-/* line 558 */
+/* line 502 */
 body.bp #content .notice {
   margin-left: 12px;
 }
