@@ -33,7 +33,7 @@
             
             &lt;p&gt;At last but not least, &lt;code&gt;ChannelFuture&lt;/code&gt; got a new method called &lt;code&gt;rethrowIfFailed()&lt;/code&gt;.  You might find it useful when you have to handle a failure in your client application:&lt;/p&gt;
             
-            &lt;pre&gt;&lt;code&gt;ChannelFuture f = ...&amp;#x000A;// Before:&amp;#x000A;f.awaitUninterruptible();&amp;#x000A;if (f.isFailure()) {&amp;#x000A;    throw new SomeException(f.getCause());&amp;#x000A;}&amp;#x000A;&amp;#x000A;// After:&amp;#x000A;f.awaitUninterruptibly().rethrowIfFailed();&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
+            &lt;pre&gt;&lt;code&gt;ChannelFuture f = ...&amp;#x000A;// Before:&amp;#x000A;f.awaitUninterruptibly();&amp;#x000A;if (f.isFailure()) {&amp;#x000A;    throw new SomeException(f.getCause());&amp;#x000A;}&amp;#x000A;&amp;#x000A;// After:&amp;#x000A;f.awaitUninterruptibly().rethrowIfFailed();&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
             
             &lt;p&gt;I hope you like these new features - please feel free to leave comments on this post.  For the detailed list of the changes, please refer to &lt;a href=&quot;https://github.com/netty/netty/issues?milestone=3&amp;state=closed&quot;&gt;the issue tracker page&lt;/a&gt;.&lt;/p&gt;
             

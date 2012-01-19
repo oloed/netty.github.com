@@ -80,7 +80,7 @@
               
               <p>At last but not least, <code>ChannelFuture</code> got a new method called <code>rethrowIfFailed()</code>.  You might find it useful when you have to handle a failure in your client application:</p>
               
-              <pre><code>ChannelFuture f = ...&#x000A;// Before:&#x000A;f.awaitUninterruptible();&#x000A;if (f.isFailure()) {&#x000A;    throw new SomeException(f.getCause());&#x000A;}&#x000A;&#x000A;// After:&#x000A;f.awaitUninterruptibly().rethrowIfFailed();&#x000A;</code></pre>
+              <pre><code>ChannelFuture f = ...&#x000A;// Before:&#x000A;f.awaitUninterruptibly();&#x000A;if (f.isFailure()) {&#x000A;    throw new SomeException(f.getCause());&#x000A;}&#x000A;&#x000A;// After:&#x000A;f.awaitUninterruptibly().rethrowIfFailed();&#x000A;</code></pre>
               
               <p>I hope you like these new features - please feel free to leave comments on this post.  For the detailed list of the changes, please refer to <a href="https://github.com/netty/netty/issues?milestone=3&amp;state=closed">the issue tracker page</a>.</p>
               
