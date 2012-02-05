@@ -2,9 +2,44 @@
 <feed xml:lang='en-US' xmlns='http://www.w3.org/2005/Atom'>
   <id>http://netty.io/</id>
   <title>Netty</title>
-  <updated>2012-01-19T00:00:00Z</updated>
+  <updated>2012-02-04T00:00:00Z</updated>
   <link href='http://netty.io/blog/index.atom' rel='self' type='application/atom+xml' />
   <link href='http://netty.io/' rel='alternate' type='text/html' />
+  <entry>
+    <id>http://netty.io/blog/2012/02/04/</id>
+    <title>Netty 3.3.1 released - SPDY Protocol !</title>
+    <updated>2012-02-04T00:00:00Z</updated>
+    <link href='http://netty.io/blog/2012/02/04/' rel='alternate' type='text/html' />
+    <author>
+      <name><a href="http://gleamynode.net/">Trustin Lee</a></name>
+    </author>
+    <summary>
+      The Netty project team is proud to announce Netty 3.3.1.
+            
+            The JAR file is already on Maven central repository. You can also get the full tarball from the download page.
+            
+            This version introduces a couple exciting features. The most important one is the new SPDY package, which was contributed by Twitter.
+            
+            If you develop for Android, you will be happy to hear that this release fix the incompability with Android (which was a regression introduced in 3.3.0).
+            
+            Beside this we introduced the possibility to @override the creation of the cumulative buffer in the FrameDecoder class. This allows you to adjust the way the buffer......
+    </summary>
+    <content type='html'>
+      &lt;p&gt;The Netty project team is proud to announce Netty 3.3.1.&lt;/p&gt;
+            
+            &lt;p&gt;The JAR file is already on Maven central repository. You can also get the full tarball from &lt;a href=&quot;http://netty.io/downloads/&quot;&gt;the download page&lt;/a&gt;.&lt;/p&gt;
+            
+            &lt;p&gt;This version introduces a couple exciting features. The most important one is &lt;a href=&quot;http://netty.io/docs/stable/api/org/jboss/netty/handler/codec/spdy/package-summary.html&quot;&gt;the new SPDY package&lt;/a&gt;, which was contributed by Twitter.&lt;/p&gt;
+            
+            &lt;p&gt;If you develop for Android, you will be happy to hear that this release fix the incompability with Android (which was a regression introduced in 3.3.0).&lt;/p&gt;
+            
+            &lt;p&gt;Beside this we introduced the possibility to @override the creation of the cumulative buffer in the FrameDecoder class. This allows you to adjust the way the buffer is created and so allows sub-classes to use way that fit them best.&lt;/p&gt;
+            
+            &lt;p&gt;For the detailed list of the changes, please refer to &lt;a href=&quot;https://github.com/netty/netty/issues?milestone=5&amp;amp;state=closed&quot;&gt;the issue tracker page&lt;/a&gt;.&lt;/p&gt;
+            
+            &lt;p&gt;If you didn't have a chance to &lt;a href=&quot;http://netty.io/community/&quot;&gt;contribute&lt;/a&gt;, you may to consider to do so in the future !&lt;/p&gt;
+    </content>
+  </entry>
   <entry>
     <id>http://netty.io/blog/2012/01/19/</id>
     <title>Netty 3.3.0 released - WebSockets!</title>
@@ -15,29 +50,29 @@
     </author>
     <summary>
       The Netty project team is proud to announce Netty 3.3.0.
-            
-            The JAR file is already being uploaded to the Maven central repository, and it's going to be propagated to the central repository soon.  You can also get the full tarball from the download page.
-            
-            This version introduces a couple exciting features.  The most important one is the new websocketx package, which replaces the old websocket implementation.  As showcased in our previous post, it provides a fully working WebSocket implementation that supports all known WebSocket specifications and passes the Autobahn test suite.
-            
-            If you are interested in more flexible thread model......
+              
+              The JAR file is already being uploaded to the Maven central repository, and it's going to be propagated to the central repository soon.  You can also get the full tarball from the download page.
+              
+              This version introduces a couple exciting features.  The most important one is the new websocketx package, which replaces the old websocket implementation.  As showcased in our previous post, it provides a fully working WebSocket implementation that supports all known WebSocket specifications and passes the Autobahn test suite.
+              
+              If you are interested in more flexible thread model......
     </summary>
     <content type='html'>
       &lt;p&gt;The Netty project team is proud to announce Netty 3.3.0.&lt;/p&gt;
-            
-            &lt;p&gt;The JAR file is already being uploaded to the Maven central repository, and it's going to be propagated to the central repository soon.  You can also get the full tarball from &lt;a href=&quot;http://netty.io/downloads/&quot;&gt;the download page&lt;/a&gt;.&lt;/p&gt;
-            
-            &lt;p&gt;This version introduces a couple exciting features.  The most important one is &lt;a href=&quot;http://netty.io/docs/stable/api/org/jboss/netty/handler/codec/http/websocketx/package-summary.html&quot;&gt;the new websocketx package&lt;/a&gt;, which replaces the old websocket implementation.  As showcased in &lt;a href=&quot;http://netty.io/blog/2011/11/17/&quot;&gt;our previous post&lt;/a&gt;, it provides a fully working WebSocket implementation that supports all known WebSocket specifications and passes &lt;a href=&quot;http://www.tavendo.de/autobahn/testsuite.html&quot;&gt;the Autobahn test suite&lt;/a&gt;.&lt;/p&gt;
-            
-            &lt;p&gt;If you are interested in more flexible thread model in your pipeline, you might be interested in the improvements in the &lt;code&gt;org.jboss.netty.handler.execution&lt;/code&gt; package.&lt;/p&gt;
-            
-            &lt;p&gt;At last but not least, &lt;code&gt;ChannelFuture&lt;/code&gt; got a new method called &lt;code&gt;rethrowIfFailed()&lt;/code&gt;.  You might find it useful when you have to handle a failure in your client application:&lt;/p&gt;
-            
-            &lt;pre&gt;&lt;code&gt;ChannelFuture f = ...&amp;#x000A;// Before:&amp;#x000A;f.awaitUninterruptibly();&amp;#x000A;if (f.isFailure()) {&amp;#x000A;    throw new SomeException(f.getCause());&amp;#x000A;}&amp;#x000A;&amp;#x000A;// After:&amp;#x000A;f.awaitUninterruptibly().rethrowIfFailed();&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
-            
-            &lt;p&gt;I hope you like these new features - please feel free to leave comments on this post.  For the detailed list of the changes, please refer to &lt;a href=&quot;https://github.com/netty/netty/issues?milestone=3&amp;state=closed&quot;&gt;the issue tracker page&lt;/a&gt;.&lt;/p&gt;
-            
-            &lt;p&gt;If you didn't have a chance to &lt;a href=&quot;http://netty.io/community/&quot;&gt;contribute&lt;/a&gt;, it's better late than never.  Actually, you can contribute a lot more than you think!&lt;/p&gt;
+              
+              &lt;p&gt;The JAR file is already being uploaded to the Maven central repository, and it's going to be propagated to the central repository soon.  You can also get the full tarball from &lt;a href=&quot;http://netty.io/downloads/&quot;&gt;the download page&lt;/a&gt;.&lt;/p&gt;
+              
+              &lt;p&gt;This version introduces a couple exciting features.  The most important one is &lt;a href=&quot;http://netty.io/docs/stable/api/org/jboss/netty/handler/codec/http/websocketx/package-summary.html&quot;&gt;the new websocketx package&lt;/a&gt;, which replaces the old websocket implementation.  As showcased in &lt;a href=&quot;http://netty.io/blog/2011/11/17/&quot;&gt;our previous post&lt;/a&gt;, it provides a fully working WebSocket implementation that supports all known WebSocket specifications and passes &lt;a href=&quot;http://www.tavendo.de/autobahn/testsuite.html&quot;&gt;the Autobahn test suite&lt;/a&gt;.&lt;/p&gt;
+              
+              &lt;p&gt;If you are interested in more flexible thread model in your pipeline, you might be interested in the improvements in the &lt;code&gt;org.jboss.netty.handler.execution&lt;/code&gt; package.&lt;/p&gt;
+              
+              &lt;p&gt;At last but not least, &lt;code&gt;ChannelFuture&lt;/code&gt; got a new method called &lt;code&gt;rethrowIfFailed()&lt;/code&gt;.  You might find it useful when you have to handle a failure in your client application:&lt;/p&gt;
+              
+              &lt;pre&gt;&lt;code&gt;ChannelFuture f = ...&amp;#x000A;// Before:&amp;#x000A;f.awaitUninterruptibly();&amp;#x000A;if (f.isFailure()) {&amp;#x000A;    throw new SomeException(f.getCause());&amp;#x000A;}&amp;#x000A;&amp;#x000A;// After:&amp;#x000A;f.awaitUninterruptibly().rethrowIfFailed();&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
+              
+              &lt;p&gt;I hope you like these new features - please feel free to leave comments on this post.  For the detailed list of the changes, please refer to &lt;a href=&quot;https://github.com/netty/netty/issues?milestone=3&amp;amp;state=closed&quot;&gt;the issue tracker page&lt;/a&gt;.&lt;/p&gt;
+              
+              &lt;p&gt;If you didn't have a chance to &lt;a href=&quot;http://netty.io/community/&quot;&gt;contribute&lt;/a&gt;, it's better late than never.  Actually, you can contribute a lot more than you think!&lt;/p&gt;
     </content>
   </entry>
   <entry>
@@ -50,23 +85,23 @@
     </author>
     <summary>
       The Netty project team is proud to announce Netty 3.2.7.
-              
-              The JAR file has been uploaded to JBoss.org Maven repository, and it's going to be propagated to the central repository soon.  You can also get the full tarball from the download page.
-              
-              For the detailed list of the changes, please refer to the issue tracker page.
-              
-              Looking back, it was a very exciting iteration.  I granted push permission to various people who sent high-quality pull requests frequently, and I believe it leads us to faster yet open and sustainable development of the project.  I'd like to appreciate everyone involved into......
+                
+                The JAR file has been uploaded to JBoss.org Maven repository, and it's going to be propagated to the central repository soon.  You can also get the full tarball from the download page.
+                
+                For the detailed list of the changes, please refer to the issue tracker page.
+                
+                Looking back, it was a very exciting iteration.  I granted push permission to various people who sent high-quality pull requests frequently, and I believe it leads us to faster yet open and sustainable development of the project.  I'd like to appreciate everyone involved into......
     </summary>
     <content type='html'>
       &lt;p&gt;The Netty project team is proud to announce Netty 3.2.7.&lt;/p&gt;
-              
-              &lt;p&gt;The JAR file has been uploaded to JBoss.org Maven repository, and it's going to be propagated to the central repository soon.  You can also get the full tarball from &lt;a href=&quot;http://netty.io/downloads/&quot;&gt;the download page&lt;/a&gt;.&lt;/p&gt;
-              
-              &lt;p&gt;For the detailed list of the changes, please refer to &lt;a href=&quot;https://github.com/netty/netty/issues?milestone=1&amp;state=closed&quot;&gt;the issue tracker page&lt;/a&gt;.&lt;/p&gt;
-              
-              &lt;p&gt;Looking back, it was a very exciting iteration.  I granted push permission to various people who sent high-quality pull requests frequently, and I believe it leads us to faster yet open and sustainable development of the project.  I'd like to appreciate everyone involved into this effort for their faith on the project and myself.&lt;/p&gt;
-              
-              &lt;p&gt;If you didn't have a chance to &lt;a href=&quot;http://netty.io/community/&quot;&gt;contribute&lt;/a&gt;, it's better late than never.  Actually, you can contribute a lot more than you think!&lt;/p&gt;
+                
+                &lt;p&gt;The JAR file has been uploaded to JBoss.org Maven repository, and it's going to be propagated to the central repository soon.  You can also get the full tarball from &lt;a href=&quot;http://netty.io/downloads/&quot;&gt;the download page&lt;/a&gt;.&lt;/p&gt;
+                
+                &lt;p&gt;For the detailed list of the changes, please refer to &lt;a href=&quot;https://github.com/netty/netty/issues?milestone=1&amp;amp;state=closed&quot;&gt;the issue tracker page&lt;/a&gt;.&lt;/p&gt;
+                
+                &lt;p&gt;Looking back, it was a very exciting iteration.  I granted push permission to various people who sent high-quality pull requests frequently, and I believe it leads us to faster yet open and sustainable development of the project.  I'd like to appreciate everyone involved into this effort for their faith on the project and myself.&lt;/p&gt;
+                
+                &lt;p&gt;If you didn't have a chance to &lt;a href=&quot;http://netty.io/community/&quot;&gt;contribute&lt;/a&gt;, it's better late than never.  Actually, you can contribute a lot more than you think!&lt;/p&gt;
     </content>
   </entry>
   <entry>
@@ -79,47 +114,47 @@
     </author>
     <summary>
       UPDATE: It's noteworthy that the logging layer we are discussing on is not part of user API.  That is, it's not intended for use by users but by developer (committer).
-                
-                There was recently a discussion in the community about whether we should switch from our own logging layer to something else such as SLF4J or java.util.logging in Netty 4.  The following is the list of the options we discussed and the related opinions:
-                
-                
-                Keep the current thin logging layer and modernize it so that it's as easy to use as SLF4J.
-                
-                
-                Why: Zero dependency. Netty itself does not log very much.
-                Drawback:......
+                  
+                  There was recently a discussion in the community about whether we should switch from our own logging layer to something else such as SLF4J or java.util.logging in Netty 4.  The following is the list of the options we discussed and the related opinions:
+                  
+                  
+                  Keep the current thin logging layer and modernize it so that it's as easy to use as SLF4J.
+                  
+                  
+                  Why: Zero dependency. Netty itself does not log very much.
+                  Drawback:......
     </summary>
     <content type='html'>
       &lt;p&gt;&lt;em&gt;UPDATE&lt;/em&gt;: It's noteworthy that the logging layer we are discussing on is not part of user API.  That is, it's not intended for use by users but by developer (committer).&lt;/p&gt;
-                
-                &lt;p&gt;There was recently &lt;a href=&quot;https://github.com/netty/netty/issues/64&quot;&gt;a discussion&lt;/a&gt; in the community about whether we should switch from our own logging layer to something else such as &lt;a href=&quot;http://www.slf4j.org/&quot;&gt;SLF4J&lt;/a&gt; or &lt;code&gt;java.util.logging&lt;/code&gt; in Netty 4.  The following is the list of the options we discussed and the related opinions:&lt;/p&gt;
-                
-                &lt;ul&gt;
-                &lt;li&gt;Keep the current thin logging layer and modernize it so that it's as easy to use as SLF4J.
-                
-                &lt;ul&gt;
-                &lt;li&gt;Why: Zero dependency. Netty itself does not log very much.&lt;/li&gt;
-                &lt;li&gt;Drawback: It doesn't make much sense to have a logging layer.  Netty should focus on I/O.&lt;/li&gt;
-                &lt;/ul&gt;
-                &lt;/li&gt;
-                &lt;li&gt;Use SLF4J.
-                
-                &lt;ul&gt;
-                &lt;li&gt;Why: A lot of open source libraries already use SLF4J.  Nice API.  Zero dependency is not really a problem because your application's classpath will probably have SLF4J anyway because other open source libraries you depend on use it.&lt;/li&gt;
-                &lt;li&gt;Drawback: Non-zero API.  People not familiar with setting up SLF4J might have difficulties to run their first Netty application.&lt;/li&gt;
-                &lt;/ul&gt;
-                &lt;/li&gt;
-                &lt;li&gt;Use &lt;code&gt;java.util.logging&lt;/code&gt;.
-                
-                &lt;ul&gt;
-                &lt;li&gt;Why: Zero dependency.  Netty doesn't need to provide a logging layer.&lt;/li&gt;
-                &lt;li&gt;Drawback: Unfriendly API.  jul-to-SLF4J bridge has &lt;a href=&quot;http://www.slf4j.org/legacy.html#jul-to-slf4j&quot;&gt;very poor performance&lt;/a&gt;.&lt;/li&gt;
-                &lt;/ul&gt;
-                &lt;/li&gt;
-                &lt;/ul&gt;
-                
-                
-                &lt;p&gt;We are probably not going to choose &lt;code&gt;java.util.logging&lt;/code&gt;, but we are undecided whether we should switch to SLF4J or not. What is your opinion? It is very likely for us to respect your comments as much as possible for decision making, so please feel free to leave a comment so that we listen to you and understand what you value more!&lt;/p&gt;
+                  
+                  &lt;p&gt;There was recently &lt;a href=&quot;https://github.com/netty/netty/issues/64&quot;&gt;a discussion&lt;/a&gt; in the community about whether we should switch from our own logging layer to something else such as &lt;a href=&quot;http://www.slf4j.org/&quot;&gt;SLF4J&lt;/a&gt; or &lt;code&gt;java.util.logging&lt;/code&gt; in Netty 4.  The following is the list of the options we discussed and the related opinions:&lt;/p&gt;
+                  
+                  &lt;ul&gt;
+                  &lt;li&gt;Keep the current thin logging layer and modernize it so that it's as easy to use as SLF4J.
+                  
+                  &lt;ul&gt;
+                  &lt;li&gt;Why: Zero dependency. Netty itself does not log very much.&lt;/li&gt;
+                  &lt;li&gt;Drawback: It doesn't make much sense to have a logging layer.  Netty should focus on I/O.&lt;/li&gt;
+                  &lt;/ul&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;Use SLF4J.
+                  
+                  &lt;ul&gt;
+                  &lt;li&gt;Why: A lot of open source libraries already use SLF4J.  Nice API.  Zero dependency is not really a problem because your application's classpath will probably have SLF4J anyway because other open source libraries you depend on use it.&lt;/li&gt;
+                  &lt;li&gt;Drawback: Non-zero API.  People not familiar with setting up SLF4J might have difficulties to run their first Netty application.&lt;/li&gt;
+                  &lt;/ul&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;Use &lt;code&gt;java.util.logging&lt;/code&gt;.
+                  
+                  &lt;ul&gt;
+                  &lt;li&gt;Why: Zero dependency.  Netty doesn't need to provide a logging layer.&lt;/li&gt;
+                  &lt;li&gt;Drawback: Unfriendly API.  jul-to-SLF4J bridge has &lt;a href=&quot;http://www.slf4j.org/legacy.html#jul-to-slf4j&quot;&gt;very poor performance&lt;/a&gt;.&lt;/li&gt;
+                  &lt;/ul&gt;
+                  &lt;/li&gt;
+                  &lt;/ul&gt;
+                  
+                  
+                  &lt;p&gt;We are probably not going to choose &lt;code&gt;java.util.logging&lt;/code&gt;, but we are undecided whether we should switch to SLF4J or not. What is your opinion? It is very likely for us to respect your comments as much as possible for decision making, so please feel free to leave a comment so that we listen to you and understand what you value more!&lt;/p&gt;
     </content>
   </entry>
   <entry>
@@ -132,145 +167,145 @@
     </author>
     <summary>
       
-                  
-                  What are WebSockets?
-                  
-                  
-                  Current web browser communications protocol is limited to the HTTP request and response paradigm - i.e. the browser requests and the server responds.
-                  
-                  
-                  What if we want to use a different communications paradigm?  For example, what if we want to perform 2 way communications where the server sends a request and the browser responds?  A common use case would be the server notifies the client that an event has occurred.
-                  
-                  
-                  This is where WebSockets come into play. WebSocket is a technology providing for bi-directional, full-duplex communications channels, over a single Transmission Control Protocol (TCP) socket.  In addition,......
+                    
+                    What are WebSockets?
+                    
+                    
+                    Current web browser communications protocol is limited to the HTTP request and response paradigm - i.e. the browser requests and the server responds.
+                    
+                    
+                    What if we want to use a different communications paradigm?  For example, what if we want to perform 2 way communications where the server sends a request and the browser responds?  A common use case would be the server notifies the client that an event has occurred.
+                    
+                    
+                    This is where WebSockets come into play. WebSocket is a technology providing for bi-directional, full-duplex communications channels, over a single Transmission Control Protocol (TCP) socket.  In addition,......
     </summary>
     <content type='html'>
       
-                  
-                  &lt;h3&gt;What are WebSockets?&lt;/h3&gt;
-                  
-                  
-                  &lt;p&gt;Current web browser communications protocol is limited to the HTTP request and response paradigm - i.e. the browser requests and the server responds.&lt;/p&gt;
-                  
-                  
-                  &lt;p&gt;What if we want to use a different communications paradigm?  For example, what if we want to perform 2 way communications where the server sends a request and the browser responds?  A common use case would be the server notifies the client that an event has occurred.&lt;/p&gt;
-                  
-                  
-                  &lt;p&gt;This is where &lt;a href=&quot;http://en.wikipedia.org/wiki/WebSocket&quot;&gt;WebSockets&lt;/a&gt; come into play. WebSocket is a technology providing for bi-directional, full-duplex communications channels, over a single Transmission Control Protocol (TCP) socket.  In addition, because WebSockets can co-exist with other HTTP traffic over port 80 and 443, firewalls will not have to be re-configured.&lt;/p&gt;
-                  
-                  
-                  &lt;p&gt;WebSocket is part of the &lt;a href=&quot;http://dev.w3.org/html5/websockets/&quot;&gt;W3C&lt;/a&gt; drive towards HTML 5.&lt;/p&gt;
-                  
-                  
-                  &lt;h3&gt;Version Confusion&lt;/h3&gt;
-                  
-                  
-                  
-                  
-                  &lt;p&gt;WebSockets is an evolving standard.  &lt;/p&gt;
-                  
-                  
-                  &lt;p&gt;Just have a look at the different &lt;a href=&quot;http://en.wikipedia.org/wiki/Comparison_of_WebSocket_implementations&quot;&gt;implementations&lt;/a&gt; and the different versions each support.  There have been numerous version of the WebSocket standards under different names.  &lt;/p&gt;
-                  
-                  
-                  &lt;p&gt;So far, browsers have converged on 2 versions.&lt;/p&gt;
-                  
-                  
-                  &lt;ul&gt;&lt;li&gt;&lt;a href=&quot;http://tools.ietf.org/html/draft-hixie-thewebsocketprotocol-76&quot;&gt;Hixie-76&lt;/a&gt;/&lt;a href=&quot;http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-00&quot;&gt;HyBi-00&lt;/a&gt; 
-                  &lt;ul&gt;&lt;li&gt;Safari 5+, Chrome 4-13 and Firefox 4 supports this standard.&lt;/li&gt;
-                  &lt;li&gt;There are two names for this version because the Hixie-76 documentation is used as input into the new HiBi IETF working group.&lt;/li&gt;
-                  &lt;li&gt;A flaw in this standard was discovered in the handshaking which requires exchange of binary data in the HTTP body.  This did not work across some proxy servers.&lt;/li&gt;
-                  
-                  &lt;/ul&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;a href=&quot;http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-10&quot;&gt;HyBi-10&lt;/a&gt; 
-                  &lt;ul&gt;&lt;li&gt;Chrome  14-15, Firefox 7 and IE 10 Developer Preview supports this standard.&lt;/li&gt;
-                  &lt;li&gt;Handshaking is performed in HTTP request and response headers&lt;/li&gt;
-                  &lt;li&gt;Uses wire protocol version 8.  You will see &#8220;Sec-WebSocket-Version: 8&#8221; in the HTTP header.&lt;/li&gt;
-                  &lt;/ul&gt;&lt;/li&gt;
-                  &lt;/ul&gt;
-                  
-                  
-                  &lt;p&gt;Hybi-00 and Hybi-10 both represents versions of the specification document.  The version of the wire protocol are actually 0 and 8 respectively.&lt;/p&gt;
-                  
-                  
-                  &lt;p&gt;Typically, the wire protocol (sequence of bits and bytes sent over the network) does not change between different versions of the specification document.  As such, the wire protocol version is set by the version of the specification document at which the change was made to the wire protocol.  So version 8 of the wire protocol was specified in &lt;a href=&quot;http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-08&quot;&gt;Hybi-08&lt;/a&gt;.&lt;/p&gt;
-                  
-                  
-                  
-                  
-                  &lt;p&gt;What changes are made between different versions of the specification document? Corrections of typos, clarification of concepts and adjustments in handshaking.  The latest version is &lt;a href=&quot;http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-17&quot;&gt;Hybi-17&lt;/a&gt; (with a wire protocol version of 13).&lt;/p&gt;
-                  
-                  
-                  &lt;h3&gt;Netty WebSocket Support&lt;/h3&gt;
-                  
-                  
-                  &lt;p&gt;&lt;strong&gt;Netty 3.2.6&lt;/strong&gt; supports Hixie-75 and 76 but &lt;strong&gt;NOT&lt;/strong&gt; Hybi-10.  Refer to the &lt;code&gt;org.jboss.netty.handler.codec.http.websocket&lt;/code&gt; package and associated examples.&lt;/p&gt;
-                  
-                  
-                  
-                  
-                  &lt;p&gt;&lt;strong&gt;Netty 4.0&lt;/strong&gt; (unreleased) will support both Hixie-75 and 76&#160;&lt;strong&gt;AND &lt;/strong&gt;Hybi-10.  The code is now in the Netty master branch (see &lt;a href=&quot;https://github.com/netty/netty/pull/26&quot;&gt;pull request #26&lt;/a&gt;)&lt;span&gt;.&lt;/span&gt;&lt;/p&gt;
-                  
-                  
-                  &lt;p&gt;Points about this implementation:&lt;/p&gt;
-                  
-                  
-                  &lt;ol&gt;&lt;li&gt;The existing &lt;code&gt;org.jboss.netty.handler.codec.http.websocket&lt;/code&gt; package remains unchanged.  There are quite a few frameworks using this package so we will just leave well enough alone. &lt;/li&gt;
-                  &lt;li&gt;The new code for web socket support has been placed in the  &lt;code&gt;org.jboss.netty.handler.codec.http.&lt;strong&gt;websocketx&lt;/strong&gt;&lt;/code&gt; package.  The &#8220;x&#8221; is intended to represent multiple versions.&lt;/li&gt;
-                  
-                  &lt;li&gt;The &lt;code&gt;websocketx&lt;/code&gt; package supports both WebSocket versions (&#8220;Hixie-75/76/Hybi-00&#8221; and &#8220;Hybi-10&#8221;)&lt;/li&gt;
-                  &lt;li&gt;The &lt;code&gt;websocketx&lt;/code&gt; supports both client and server.&lt;/li&gt;
-                  &lt;li&gt;Exmaples - refer to &lt;code&gt;package-info.java&lt;/code&gt; in each package for instructions.               
-                  
-                  &lt;ul&gt;&lt;li&gt;&lt;code&gt;org.jboss.netty.example.http.websocketx.autobahn&lt;/code&gt; - echo server used for running AutoBahn tests&lt;/li&gt;
-                  &lt;li&gt;&lt;code&gt;org.jboss.netty.example.http.websocketx.client&lt;/code&gt; - web socket client implementation&lt;/li&gt;
-                  &lt;li&gt;&lt;code&gt;org.jboss.netty.example.http.websocketx.server&lt;/code&gt; - web socket server implementation that echo the text you send it in upper case&lt;/li&gt;
-                  &lt;li&gt;&lt;code&gt;org.jboss.netty.example.http.websocketx.sslserver &lt;/code&gt;- example of how to use SSL with the web socket server&lt;/li&gt;
-                  &lt;/ul&gt;&lt;/li&gt;
-                  &lt;li&gt;Frames                  
-                  
-                  &lt;ul&gt;&lt;li&gt;Data is sent between client and server in frames.&lt;/li&gt;
-                  &lt;li&gt;The old &lt;code&gt;websocket&lt;/code&gt; package implements only the &lt;code&gt;DefaultWebSocketFrame&lt;/code&gt;.  Text, binary and closing frames are encapsulated into this single class.&lt;/li&gt;
-                  &lt;li&gt;The new &lt;code&gt;websocketx&lt;/code&gt; package implements frames as a different class: &lt;code&gt;TextWebSocketFrame&lt;/code&gt;, &lt;code&gt;BinaryWebSocketFrame&lt;/code&gt;, &lt;code&gt;CloseWebSocketFrame&lt;/code&gt;, &lt;code&gt;PingWebSocketFrame&lt;/code&gt; and &lt;code&gt;PongWebSocketFrame&lt;/code&gt;.  I felt that this made the code easier to read and understand.&lt;/li&gt;
-                  
-                  &lt;/ul&gt;&lt;/li&gt;
-                  &lt;li&gt;Encoders and Decoders                 
-                  &lt;ul&gt;&lt;li&gt;Hixie-75/76/Hybi-00 is implemented as &lt;code&gt;WebSocket00FrameDecoder&lt;/code&gt; and &lt;code&gt;WebSocket00FrameEncoder&lt;/code&gt;.&lt;/li&gt;
-                  &lt;li&gt;Hybi-10 is implemented as &lt;code&gt;WebSocket08FrameDecoder&lt;/code&gt; and &lt;code&gt;WebSocket08FrameEncoder&lt;/code&gt;.  The version #8 is used because the wire protocol #8 is used in conjunction with the specification document version #10.&lt;/li&gt;
-                  &lt;/ul&gt;&lt;/li&gt;
-                  
-                  &lt;li&gt;Server Handshake                  
-                  &lt;ul&gt;&lt;li&gt;Implements the handshaking protocol on the server side.&lt;/li&gt;
-                  &lt;li&gt;Hixie-75/76/Hybi-00 is implemented in &lt;code&gt;WebSocketServerHandshaker00&lt;/code&gt;&lt;/li&gt;
-                  &lt;li&gt;Hybi-10 is implemented in &lt;code&gt;WebSocketServerHandshaker10&lt;/code&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;code&gt;WebSocketServerHandshakerFactory&lt;/code&gt; picks the correct handshaker to use based on the handshaking request sent by the client.&lt;/li&gt;
-                  &lt;li&gt;See &lt;code&gt;org.jboss.netty.example.http.websocketx.server.WebSocketServer&lt;/code&gt; for an example.&lt;/li&gt;
-                  
-                  &lt;/ul&gt;&lt;/li&gt;
-                  &lt;li&gt;Client Handshake                  
-                  &lt;ul&gt;&lt;li&gt;Implements the handshaking protocol on the client side.&lt;/li&gt;
-                  &lt;li&gt;Hixie-75/76/Hybi-00 is implemented in &lt;code&gt;WebSocketClientHandshaker00&lt;/code&gt;&lt;/li&gt;
-                  &lt;li&gt;Hybi-10 is implemented in &lt;code&gt;WebSocketClientHandshaker10&lt;/code&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;code&gt;WebSocketClientHandshakerFactory&lt;/code&gt; picks the correct handshaker to use based on the version of the specification passed in as a parameter.&lt;/li&gt;
-                  &lt;li&gt;See &lt;code&gt;org.jboss.netty.example.http.websocketx.client.App&lt;/code&gt; for an example.&lt;/li&gt;
-                  
-                  &lt;/ul&gt;&lt;/li&gt;
-                  &lt;li&gt; This implementation has passed the &lt;a href=&quot;http://www.tavendo.de/autobahn/testsuite.html&quot;&gt;AutoBahn&lt;/a&gt; Server Tests V 0.4.2&#160;&lt;/li&gt;
-                  &lt;/ol&gt;
-                  
-                  
-                  &lt;h3&gt;Thank You&lt;/h3&gt;
-                  
-                  
-                  &lt;p&gt;This implementation uses code from &lt;a href=&quot;https://github.com/joewalnes/webbit&quot;&gt;Webbit&lt;/a&gt; (for which Aslak Hellesøy has written hybi-10 support) and from &lt;a href=&quot;https://github.com/cgbystrom/netty-tools&quot;&gt;cgbystrom&lt;/a&gt; (for web socket clients).&lt;/p&gt;
-                  
-                  
-                  &lt;h3&gt;Next&lt;/h3&gt;
-                  
-                  
-                  
-                  
-                  &lt;p&gt;It is my understanding that Chrome 16 will support Hybi-17.  I&#8217;ll be looking to add Netty support for this web socket version shortly.&lt;/p&gt;
+                    
+                    &lt;h3&gt;What are WebSockets?&lt;/h3&gt;
+                    
+                    
+                    &lt;p&gt;Current web browser communications protocol is limited to the HTTP request and response paradigm - i.e. the browser requests and the server responds.&lt;/p&gt;
+                    
+                    
+                    &lt;p&gt;What if we want to use a different communications paradigm?  For example, what if we want to perform 2 way communications where the server sends a request and the browser responds?  A common use case would be the server notifies the client that an event has occurred.&lt;/p&gt;
+                    
+                    
+                    &lt;p&gt;This is where &lt;a href=&quot;http://en.wikipedia.org/wiki/WebSocket&quot;&gt;WebSockets&lt;/a&gt; come into play. WebSocket is a technology providing for bi-directional, full-duplex communications channels, over a single Transmission Control Protocol (TCP) socket.  In addition, because WebSockets can co-exist with other HTTP traffic over port 80 and 443, firewalls will not have to be re-configured.&lt;/p&gt;
+                    
+                    
+                    &lt;p&gt;WebSocket is part of the &lt;a href=&quot;http://dev.w3.org/html5/websockets/&quot;&gt;W3C&lt;/a&gt; drive towards HTML 5.&lt;/p&gt;
+                    
+                    
+                    &lt;h3&gt;Version Confusion&lt;/h3&gt;
+                    
+                    
+                    
+                    
+                    &lt;p&gt;WebSockets is an evolving standard.  &lt;/p&gt;
+                    
+                    
+                    &lt;p&gt;Just have a look at the different &lt;a href=&quot;http://en.wikipedia.org/wiki/Comparison_of_WebSocket_implementations&quot;&gt;implementations&lt;/a&gt; and the different versions each support.  There have been numerous version of the WebSocket standards under different names.  &lt;/p&gt;
+                    
+                    
+                    &lt;p&gt;So far, browsers have converged on 2 versions.&lt;/p&gt;
+                    
+                    
+                    &lt;ul&gt;&lt;li&gt;&lt;a href=&quot;http://tools.ietf.org/html/draft-hixie-thewebsocketprotocol-76&quot;&gt;Hixie-76&lt;/a&gt;/&lt;a href=&quot;http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-00&quot;&gt;HyBi-00&lt;/a&gt; 
+                    &lt;ul&gt;&lt;li&gt;Safari 5+, Chrome 4-13 and Firefox 4 supports this standard.&lt;/li&gt;
+                    &lt;li&gt;There are two names for this version because the Hixie-76 documentation is used as input into the new HiBi IETF working group.&lt;/li&gt;
+                    &lt;li&gt;A flaw in this standard was discovered in the handshaking which requires exchange of binary data in the HTTP body.  This did not work across some proxy servers.&lt;/li&gt;
+                    
+                    &lt;/ul&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-10&quot;&gt;HyBi-10&lt;/a&gt; 
+                    &lt;ul&gt;&lt;li&gt;Chrome  14-15, Firefox 7 and IE 10 Developer Preview supports this standard.&lt;/li&gt;
+                    &lt;li&gt;Handshaking is performed in HTTP request and response headers&lt;/li&gt;
+                    &lt;li&gt;Uses wire protocol version 8.  You will see &amp;#8220;Sec-WebSocket-Version: 8&amp;#8221; in the HTTP header.&lt;/li&gt;
+                    &lt;/ul&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                    
+                    
+                    &lt;p&gt;Hybi-00 and Hybi-10 both represents versions of the specification document.  The version of the wire protocol are actually 0 and 8 respectively.&lt;/p&gt;
+                    
+                    
+                    &lt;p&gt;Typically, the wire protocol (sequence of bits and bytes sent over the network) does not change between different versions of the specification document.  As such, the wire protocol version is set by the version of the specification document at which the change was made to the wire protocol.  So version 8 of the wire protocol was specified in &lt;a href=&quot;http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-08&quot;&gt;Hybi-08&lt;/a&gt;.&lt;/p&gt;
+                    
+                    
+                    
+                    
+                    &lt;p&gt;What changes are made between different versions of the specification document? Corrections of typos, clarification of concepts and adjustments in handshaking.  The latest version is &lt;a href=&quot;http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-17&quot;&gt;Hybi-17&lt;/a&gt; (with a wire protocol version of 13).&lt;/p&gt;
+                    
+                    
+                    &lt;h3&gt;Netty WebSocket Support&lt;/h3&gt;
+                    
+                    
+                    &lt;p&gt;&lt;strong&gt;Netty 3.2.6&lt;/strong&gt; supports Hixie-75 and 76 but &lt;strong&gt;NOT&lt;/strong&gt; Hybi-10.  Refer to the &lt;code&gt;org.jboss.netty.handler.codec.http.websocket&lt;/code&gt; package and associated examples.&lt;/p&gt;
+                    
+                    
+                    
+                    
+                    &lt;p&gt;&lt;strong&gt;Netty 4.0&lt;/strong&gt; (unreleased) will support both Hixie-75 and 76&amp;#160;&lt;strong&gt;AND &lt;/strong&gt;Hybi-10.  The code is now in the Netty master branch (see &lt;a href=&quot;https://github.com/netty/netty/pull/26&quot;&gt;pull request #26&lt;/a&gt;)&lt;span&gt;.&lt;/span&gt;&lt;/p&gt;
+                    
+                    
+                    &lt;p&gt;Points about this implementation:&lt;/p&gt;
+                    
+                    
+                    &lt;ol&gt;&lt;li&gt;The existing &lt;code&gt;org.jboss.netty.handler.codec.http.websocket&lt;/code&gt; package remains unchanged.  There are quite a few frameworks using this package so we will just leave well enough alone. &lt;/li&gt;
+                    &lt;li&gt;The new code for web socket support has been placed in the  &lt;code&gt;org.jboss.netty.handler.codec.http.&lt;strong&gt;websocketx&lt;/strong&gt;&lt;/code&gt; package.  The &amp;#8220;x&amp;#8221; is intended to represent multiple versions.&lt;/li&gt;
+                    
+                    &lt;li&gt;The &lt;code&gt;websocketx&lt;/code&gt; package supports both WebSocket versions (&amp;#8220;Hixie-75/76/Hybi-00&amp;#8221; and &amp;#8220;Hybi-10&amp;#8221;)&lt;/li&gt;
+                    &lt;li&gt;The &lt;code&gt;websocketx&lt;/code&gt; supports both client and server.&lt;/li&gt;
+                    &lt;li&gt;Exmaples - refer to &lt;code&gt;package-info.java&lt;/code&gt; in each package for instructions.               
+                    
+                    &lt;ul&gt;&lt;li&gt;&lt;code&gt;org.jboss.netty.example.http.websocketx.autobahn&lt;/code&gt; - echo server used for running AutoBahn tests&lt;/li&gt;
+                    &lt;li&gt;&lt;code&gt;org.jboss.netty.example.http.websocketx.client&lt;/code&gt; - web socket client implementation&lt;/li&gt;
+                    &lt;li&gt;&lt;code&gt;org.jboss.netty.example.http.websocketx.server&lt;/code&gt; - web socket server implementation that echo the text you send it in upper case&lt;/li&gt;
+                    &lt;li&gt;&lt;code&gt;org.jboss.netty.example.http.websocketx.sslserver &lt;/code&gt;- example of how to use SSL with the web socket server&lt;/li&gt;
+                    &lt;/ul&gt;&lt;/li&gt;
+                    &lt;li&gt;Frames                  
+                    
+                    &lt;ul&gt;&lt;li&gt;Data is sent between client and server in frames.&lt;/li&gt;
+                    &lt;li&gt;The old &lt;code&gt;websocket&lt;/code&gt; package implements only the &lt;code&gt;DefaultWebSocketFrame&lt;/code&gt;.  Text, binary and closing frames are encapsulated into this single class.&lt;/li&gt;
+                    &lt;li&gt;The new &lt;code&gt;websocketx&lt;/code&gt; package implements frames as a different class: &lt;code&gt;TextWebSocketFrame&lt;/code&gt;, &lt;code&gt;BinaryWebSocketFrame&lt;/code&gt;, &lt;code&gt;CloseWebSocketFrame&lt;/code&gt;, &lt;code&gt;PingWebSocketFrame&lt;/code&gt; and &lt;code&gt;PongWebSocketFrame&lt;/code&gt;.  I felt that this made the code easier to read and understand.&lt;/li&gt;
+                    
+                    &lt;/ul&gt;&lt;/li&gt;
+                    &lt;li&gt;Encoders and Decoders                 
+                    &lt;ul&gt;&lt;li&gt;Hixie-75/76/Hybi-00 is implemented as &lt;code&gt;WebSocket00FrameDecoder&lt;/code&gt; and &lt;code&gt;WebSocket00FrameEncoder&lt;/code&gt;.&lt;/li&gt;
+                    &lt;li&gt;Hybi-10 is implemented as &lt;code&gt;WebSocket08FrameDecoder&lt;/code&gt; and &lt;code&gt;WebSocket08FrameEncoder&lt;/code&gt;.  The version #8 is used because the wire protocol #8 is used in conjunction with the specification document version #10.&lt;/li&gt;
+                    &lt;/ul&gt;&lt;/li&gt;
+                    
+                    &lt;li&gt;Server Handshake                  
+                    &lt;ul&gt;&lt;li&gt;Implements the handshaking protocol on the server side.&lt;/li&gt;
+                    &lt;li&gt;Hixie-75/76/Hybi-00 is implemented in &lt;code&gt;WebSocketServerHandshaker00&lt;/code&gt;&lt;/li&gt;
+                    &lt;li&gt;Hybi-10 is implemented in &lt;code&gt;WebSocketServerHandshaker10&lt;/code&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;code&gt;WebSocketServerHandshakerFactory&lt;/code&gt; picks the correct handshaker to use based on the handshaking request sent by the client.&lt;/li&gt;
+                    &lt;li&gt;See &lt;code&gt;org.jboss.netty.example.http.websocketx.server.WebSocketServer&lt;/code&gt; for an example.&lt;/li&gt;
+                    
+                    &lt;/ul&gt;&lt;/li&gt;
+                    &lt;li&gt;Client Handshake                  
+                    &lt;ul&gt;&lt;li&gt;Implements the handshaking protocol on the client side.&lt;/li&gt;
+                    &lt;li&gt;Hixie-75/76/Hybi-00 is implemented in &lt;code&gt;WebSocketClientHandshaker00&lt;/code&gt;&lt;/li&gt;
+                    &lt;li&gt;Hybi-10 is implemented in &lt;code&gt;WebSocketClientHandshaker10&lt;/code&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;code&gt;WebSocketClientHandshakerFactory&lt;/code&gt; picks the correct handshaker to use based on the version of the specification passed in as a parameter.&lt;/li&gt;
+                    &lt;li&gt;See &lt;code&gt;org.jboss.netty.example.http.websocketx.client.App&lt;/code&gt; for an example.&lt;/li&gt;
+                    
+                    &lt;/ul&gt;&lt;/li&gt;
+                    &lt;li&gt; This implementation has passed the &lt;a href=&quot;http://www.tavendo.de/autobahn/testsuite.html&quot;&gt;AutoBahn&lt;/a&gt; Server Tests V 0.4.2&amp;#160;&lt;/li&gt;
+                    &lt;/ol&gt;
+                    
+                    
+                    &lt;h3&gt;Thank You&lt;/h3&gt;
+                    
+                    
+                    &lt;p&gt;This implementation uses code from &lt;a href=&quot;https://github.com/joewalnes/webbit&quot;&gt;Webbit&lt;/a&gt; (for which Aslak Hellesøy has written hybi-10 support) and from &lt;a href=&quot;https://github.com/cgbystrom/netty-tools&quot;&gt;cgbystrom&lt;/a&gt; (for web socket clients).&lt;/p&gt;
+                    
+                    
+                    &lt;h3&gt;Next&lt;/h3&gt;
+                    
+                    
+                    
+                    
+                    &lt;p&gt;It is my understanding that Chrome 16 will support Hybi-17.  I&amp;#8217;ll be looking to add Netty support for this web socket version shortly.&lt;/p&gt;
     </content>
   </entry>
   <entry>
@@ -283,14 +318,14 @@
     </author>
     <summary>
       Recently we announced our new web site at http://netty.io/ but Red Hat have informed me that there are some outstanding issues related to the migration. As such we've been requested to move back to the original site at http://jboss.org/netty/ until these have been addressed. I apologize for any confusion caused.
-                    
-                    Hopefully we will be able to continue using StackOverflow and Google Groups as the Netty community agreed.
-                    ......
+                      
+                      Hopefully we will be able to continue using StackOverflow and Google Groups as the Netty community agreed.
+                      ......
     </summary>
     <content type='html'>
       &lt;p&gt;Recently we announced our new web site at &lt;a href=&quot;http://netty.io/&quot;&gt;http://netty.io/&lt;/a&gt; but Red Hat have informed me that there are some outstanding issues related to the migration. As such we've been requested to move back to the original site at &lt;a href=&quot;http://jboss.org/netty/&quot;&gt;http://jboss.org/netty/&lt;/a&gt; until these have been addressed. I apologize for any confusion caused.&lt;/p&gt;
-                    
-                    &lt;p&gt;Hopefully we will be able to continue using StackOverflow and Google Groups as the Netty community agreed.&lt;/p&gt;
+                      
+                      &lt;p&gt;Hopefully we will be able to continue using StackOverflow and Google Groups as the Netty community agreed.&lt;/p&gt;
     </content>
   </entry>
   <entry>
@@ -303,43 +338,43 @@
     </author>
     <summary>
       Hello Netty community,
-                      
-                      I have successfully finished the migration of our web site from the JBoss.org to our own domain, netty.io.  The new web site and its complete source code is hosted at Github.
-                      
-                      In this announcement, I'd like to mention what this means for us:
-                      
-                      
-                      We are no longer a member of the JBoss Community.
-                      The user forum is replaced with StackOverflow. Please don't forget to tag your questions with 'netty'.
-                      The developer forum is replaced with a Google Group. Invitations will be sent to the subscribers.
-                      JIRA is replaced with the Github issue tracker.
-                      Wiki is replaced with the Github wiki.
-                      The announcement forum is......
+                        
+                        I have successfully finished the migration of our web site from the JBoss.org to our own domain, netty.io.  The new web site and its complete source code is hosted at Github.
+                        
+                        In this announcement, I'd like to mention what this means for us:
+                        
+                        
+                        We are no longer a member of the JBoss Community.
+                        The user forum is replaced with StackOverflow. Please don't forget to tag your questions with 'netty'.
+                        The developer forum is replaced with a Google Group. Invitations will be sent to the subscribers.
+                        JIRA is replaced with the Github issue tracker.
+                        Wiki is replaced with the Github wiki.
+                        The announcement forum is......
     </summary>
     <content type='html'>
       &lt;p&gt;Hello Netty community,&lt;/p&gt;
-                      
-                      &lt;p&gt;I have successfully finished the migration of our web site from the &lt;a href=&quot;http://jboss.org/&quot;&gt;JBoss.org&lt;/a&gt; to our own domain, &lt;a href=&quot;http://netty.io/&quot;&gt;netty.io&lt;/a&gt;.  The new web site and its complete source code is hosted at &lt;a href=&quot;https://github.com/netty/netty-website/&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
-                      
-                      &lt;p&gt;In this announcement, I'd like to mention what this means for us:&lt;/p&gt;
-                      
-                      &lt;ul&gt;
-                      &lt;li&gt;We are no longer a member of the JBoss Community.&lt;/li&gt;
-                      &lt;li&gt;The user forum is replaced with &lt;a href=&quot;http://stackoverflow.com/questions/tagged/netty&quot;&gt;StackOverflow&lt;/a&gt;. Please don't forget to tag your questions with 'netty'.&lt;/li&gt;
-                      &lt;li&gt;The developer forum is replaced with a &lt;a href=&quot;https://groups.google.com/d/forum/netty&quot;&gt;Google Group&lt;/a&gt;. Invitations will be sent to the subscribers.&lt;/li&gt;
-                      &lt;li&gt;JIRA is replaced with &lt;a href=&quot;https://github.com/netty/netty/issues&quot;&gt;the Github issue tracker&lt;/a&gt;.&lt;/li&gt;
-                      &lt;li&gt;Wiki is replaced with &lt;a href=&quot;https://github.com/netty/netty/wiki&quot;&gt;the Github wiki&lt;/a&gt;.&lt;/li&gt;
-                      &lt;li&gt;The announcement forum is replaced with &lt;a href=&quot;http://netty.io/blog/&quot;&gt;the blog&lt;/a&gt;. We will post interesting news and articles here. &lt;a href=&quot;http://feeds.feedburner.com/netty_project&quot;&gt;(RSS Feed)&lt;/a&gt;&lt;/li&gt;
-                      &lt;/ul&gt;
-                      
-                      
-                      &lt;p&gt;The old web site at http:/jboss.org/netty will contain announcements to redirect you to the new web site.  All forums, JIRA project, and wiki pages will go read-only, too.&lt;/p&gt;
-                      
-                      &lt;p&gt;With this big move, I believe, both the users and developers will take advantage of the best-of-the-breed services.  Contributing to the web site content and documentation will also become much easier because everything is now hosted at Git repositories.  Just fork it and send a pull request.&lt;/p&gt;
-                      
-                      &lt;p&gt;I'd like to thank &lt;a href=&quot;http://twitter.com/jobs&quot;&gt;Twitter&lt;/a&gt; for allowing me to take the exciting opportunity to join the flock and to spend more time on the project and make this move happen.&lt;/p&gt;
-                      
-                      &lt;p&gt;What do you think about the new web site?  Does it look good?  What do you miss from the old web site?  What would make it even better?  Let us know!&lt;/p&gt;
+                        
+                        &lt;p&gt;I have successfully finished the migration of our web site from the &lt;a href=&quot;http://jboss.org/&quot;&gt;JBoss.org&lt;/a&gt; to our own domain, &lt;a href=&quot;http://netty.io/&quot;&gt;netty.io&lt;/a&gt;.  The new web site and its complete source code is hosted at &lt;a href=&quot;https://github.com/netty/netty-website/&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+                        
+                        &lt;p&gt;In this announcement, I'd like to mention what this means for us:&lt;/p&gt;
+                        
+                        &lt;ul&gt;
+                        &lt;li&gt;We are no longer a member of the JBoss Community.&lt;/li&gt;
+                        &lt;li&gt;The user forum is replaced with &lt;a href=&quot;http://stackoverflow.com/questions/tagged/netty&quot;&gt;StackOverflow&lt;/a&gt;. Please don't forget to tag your questions with 'netty'.&lt;/li&gt;
+                        &lt;li&gt;The developer forum is replaced with a &lt;a href=&quot;https://groups.google.com/d/forum/netty&quot;&gt;Google Group&lt;/a&gt;. Invitations will be sent to the subscribers.&lt;/li&gt;
+                        &lt;li&gt;JIRA is replaced with &lt;a href=&quot;https://github.com/netty/netty/issues&quot;&gt;the Github issue tracker&lt;/a&gt;.&lt;/li&gt;
+                        &lt;li&gt;Wiki is replaced with &lt;a href=&quot;https://github.com/netty/netty/wiki&quot;&gt;the Github wiki&lt;/a&gt;.&lt;/li&gt;
+                        &lt;li&gt;The announcement forum is replaced with &lt;a href=&quot;http://netty.io/blog/&quot;&gt;the blog&lt;/a&gt;. We will post interesting news and articles here. &lt;a href=&quot;http://feeds.feedburner.com/netty_project&quot;&gt;(RSS Feed)&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                        
+                        
+                        &lt;p&gt;The old web site at http:/jboss.org/netty will contain announcements to redirect you to the new web site.  All forums, JIRA project, and wiki pages will go read-only, too.&lt;/p&gt;
+                        
+                        &lt;p&gt;With this big move, I believe, both the users and developers will take advantage of the best-of-the-breed services.  Contributing to the web site content and documentation will also become much easier because everything is now hosted at Git repositories.  Just fork it and send a pull request.&lt;/p&gt;
+                        
+                        &lt;p&gt;I'd like to thank &lt;a href=&quot;http://twitter.com/jobs&quot;&gt;Twitter&lt;/a&gt; for allowing me to take the exciting opportunity to join the flock and to spend more time on the project and make this move happen.&lt;/p&gt;
+                        
+                        &lt;p&gt;What do you think about the new web site?  Does it look good?  What do you miss from the old web site?  What would make it even better?  Let us know!&lt;/p&gt;
     </content>
   </entry>
 </feed>
