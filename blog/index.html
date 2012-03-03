@@ -62,291 +62,177 @@
       </div>
       <div id='content' lang='en'>
         <div class='notice'>
-          Wrote something related with Netty? <a href="mailto:netty@googlegroups.com">Let us know!</a> We will let you publish your post here.
-        </div>
-        <div class='post'>
-          <h2>
-            <a href='/blog/2012/02/04/'>Netty 3.3.1 released - SPDY Protocol !</a>
-          </h2>
-          <div class='body'>
-            <p>The Netty project team is proud to announce Netty 3.3.1.</p>
-            
-            <p>The JAR file is already on Maven central repository. You can also get the full tarball from <a href="/downloads/">the download page</a>.</p>
-            
-            <p>This version introduces a couple exciting features. The most important one is <a href="http://netty.io/docs/stable/api/org/jboss/netty/handler/codec/spdy/package-summary.html">the new SPDY package</a>, which was contributed by Twitter.</p>
-            
-            <p>If you develop for Android, you will be happy to hear that this release fix the incompability with Android (which was a regression introduced in 3.3.0).</p>
-            
-            <p>Beside this we introduced the possibility to @override the creation of the cumulative buffer in the FrameDecoder class. This allows you to adjust the way the buffer is created and so allows sub-classes to use way that fit them best.</p>
-            
-            <p>For the detailed list of the changes, please refer to <a href="https://github.com/netty/netty/issues?milestone=5&amp;state=closed">the issue tracker page</a>.</p>
-            
-            <p>If you didn't have a chance to <a href="/community/">contribute</a>, you may to consider to do so in the future !</p>
+            Wrote something related with Netty? <a href="mailto:netty@googlegroups.com">Let us know!</a> We will let you publish your post here.
           </div>
-          <div class='footer'>
-            <div class='comments-link'>
-               <a href="/blog/2012/02/04/#disqus_thread">Comments</a>
+          <div class='post'>
+            <h2>
+              <a href='/blog/2012/03/03/'>Netty 3.4.0.Alpha released !</a>
+            </h2>
+            <div class='body'>
+              <p>The Netty project team is proud to announce the first Alpha release of Netty 3.4.0. So caution, its Alpha and only for the really brave out there...</p>
+              
+              <p>The JAR file is already on Maven central repository. You can also get the full tarball from <a href="/downloads/">the download page</a>.</p>
+              
+              <p>This version introduce an often requested feature that allows the user to schedule a Runnable for execution in the IO-Thread (once it runs the next time). Beside this it fixes a number of bugs and brings you some enhancements.</p>
+              
+              <p>One of the most important enhancement is the change of the Selector.select(..) timeout, which gives you even more throughput. Other changes include performance optimization in the SPDY implementation.
+              Let us thank again Twitter for the steady stream of pull requests.</p>
+              
+              <p>Be aware that Netty needs Java 7 to compile since this release. Anyway you can still use Java 5+ to run it.</p>
+              
+              <p>For the detailed list of the changes, please refer to <a href="https://github.com/netty/netty/issues?milestone=6&amp;state=closed">the issue tracker page</a>.</p>
             </div>
-            <div class='author'>
-              <a href="http://www.murkycloud.com/">Norman Maurer</a> on 04 February 2012
-            </div>
-          </div>
-        </div>
-        <div class='post'>
-          <h2>
-            <a href='/blog/2012/01/19/'>Netty 3.3.0 released - WebSockets!</a>
-          </h2>
-          <div class='body'>
-            <p>The Netty project team is proud to announce Netty 3.3.0.</p>
-            
-            <p>The JAR file is already being uploaded to the Maven central repository, and it's going to be propagated to the central repository soon.  You can also get the full tarball from <a href="/downloads/">the download page</a>.</p>
-            
-            <p>This version introduces a couple exciting features.  The most important one is <a href="http://netty.io/docs/stable/api/org/jboss/netty/handler/codec/http/websocketx/package-summary.html">the new websocketx package</a>, which replaces the old websocket implementation.  As showcased in <a href="/blog/2011/11/17/">our previous post</a>, it provides a fully working WebSocket implementation that supports all known WebSocket specifications and passes <a href="http://www.tavendo.de/autobahn/testsuite.html">the Autobahn test suite</a>.</p>
-            
-            <p>If you are interested in more flexible thread model in your pipeline, you might be interested in the improvements in the <code>org.jboss.netty.handler.execution</code> package.</p>
-            
-            <p>At last but not least, <code>ChannelFuture</code> got a new method called <code>rethrowIfFailed()</code>.  You might find it useful when you have to handle a failure in your client application:</p>
-            
-            <pre><code>ChannelFuture f = ...&#x000A;    // Before:&#x000A;    f.awaitUninterruptibly();&#x000A;    if (f.isFailure()) {&#x000A;        throw new SomeException(f.getCause());&#x000A;    }&#x000A;    &#x000A;    // After:&#x000A;    f.awaitUninterruptibly().rethrowIfFailed();&#x000A;    </code></pre>
-            
-            <p>I hope you like these new features - please feel free to leave comments on this post.  For the detailed list of the changes, please refer to <a href="https://github.com/netty/netty/issues?milestone=3&amp;state=closed">the issue tracker page</a>.</p>
-            
-            <p>If you didn't have a chance to <a href="/community/">contribute</a>, it's better late than never.  Actually, you can contribute a lot more than you think!</p>
-          </div>
-          <div class='footer'>
-            <div class='comments-link'>
-               <a href="/blog/2012/01/19/#disqus_thread">Comments</a>
-            </div>
-            <div class='author'>
-              <a href="http://gleamynode.net/">Trustin Lee</a> on 19 January 2012
+            <div class='footer'>
+              <div class='comments-link'>
+                 <a href="/blog/2012/03/03/#disqus_thread">Comments</a>
+              </div>
+              <div class='author'>
+                <a href="http://www.murkycloud.com/">Norman Maurer</a> on 03 March 2012
+              </div>
             </div>
           </div>
-        </div>
-        <div class='post'>
-          <h2>
-            <a href='/blog/2011/11/23/'>Netty 3.2.7 released</a>
-          </h2>
-          <div class='body'>
-            <p>The Netty project team is proud to announce Netty 3.2.7.</p>
-            
-            <p>The JAR file has been uploaded to JBoss.org Maven repository, and it's going to be propagated to the central repository soon.  You can also get the full tarball from <a href="/downloads/">the download page</a>.</p>
-            
-            <p>For the detailed list of the changes, please refer to <a href="https://github.com/netty/netty/issues?milestone=1&amp;state=closed">the issue tracker page</a>.</p>
-            
-            <p>Looking back, it was a very exciting iteration.  I granted push permission to various people who sent high-quality pull requests frequently, and I believe it leads us to faster yet open and sustainable development of the project.  I'd like to appreciate everyone involved into this effort for their faith on the project and myself.</p>
-            
-            <p>If you didn't have a chance to <a href="/community/">contribute</a>, it's better late than never.  Actually, you can contribute a lot more than you think!</p>
-          </div>
-          <div class='footer'>
-            <div class='comments-link'>
-               <a href="/blog/2011/11/23/#disqus_thread">Comments</a>
+          <div class='post'>
+            <h2>
+              <a href='/blog/2012/02/04/'>Netty 3.3.1 released - SPDY Protocol !</a>
+            </h2>
+            <div class='body'>
+              <p>The Netty project team is proud to announce Netty 3.3.1.</p>
+              
+              <p>The JAR file is already on Maven central repository. You can also get the full tarball from <a href="/downloads/">the download page</a>.</p>
+              
+              <p>This version introduces a couple exciting features. The most important one is <a href="http://netty.io/docs/stable/api/org/jboss/netty/handler/codec/spdy/package-summary.html">the new SPDY package</a>, which was contributed by Twitter.</p>
+              
+              <p>If you develop for Android, you will be happy to hear that this release fix the incompability with Android (which was a regression introduced in 3.3.0).</p>
+              
+              <p>Beside this we introduced the possibility to @override the creation of the cumulative buffer in the FrameDecoder class. This allows you to adjust the way the buffer is created and so allows sub-classes to use way that fit them best.</p>
+              
+              <p>For the detailed list of the changes, please refer to <a href="https://github.com/netty/netty/issues?milestone=5&amp;state=closed">the issue tracker page</a>.</p>
+              
+              <p>If you didn't have a chance to <a href="/community/">contribute</a>, you may to consider to do so in the future !</p>
             </div>
-            <div class='author'>
-              <a href="http://gleamynode.net/">Trustin Lee</a> on 23 November 2011
-            </div>
-          </div>
-        </div>
-        <div class='post'>
-          <h2>
-            <a href='/blog/2011/11/22/'>To use SLF4J or not, that is the question</a>
-          </h2>
-          <div class='body'>
-            <p><em>UPDATE</em>: It's noteworthy that the logging layer we are discussing on is not part of user API.  That is, it's not intended for use by users but by developer (committer).</p>
-            
-            <p>There was recently <a href="https://github.com/netty/netty/issues/64">a discussion</a> in the community about whether we should switch from our own logging layer to something else such as <a href="http://www.slf4j.org/">SLF4J</a> or <code>java.util.logging</code> in Netty 4.  The following is the list of the options we discussed and the related opinions:</p>
-            
-            <ul>
-            <li>Keep the current thin logging layer and modernize it so that it's as easy to use as SLF4J.
-            
-            <ul>
-            <li>Why: Zero dependency. Netty itself does not log very much.</li>
-            <li>Drawback: It doesn't make much sense to have a logging layer.  Netty should focus on I/O.</li>
-            </ul>
-            </li>
-            <li>Use SLF4J.
-            
-            <ul>
-            <li>Why: A lot of open source libraries already use SLF4J.  Nice API.  Zero dependency is not really a problem because your application's classpath will probably have SLF4J anyway because other open source libraries you depend on use it.</li>
-            <li>Drawback: Non-zero API.  People not familiar with setting up SLF4J might have difficulties to run their first Netty application.</li>
-            </ul>
-            </li>
-            <li>Use <code>java.util.logging</code>.
-            
-            <ul>
-            <li>Why: Zero dependency.  Netty doesn't need to provide a logging layer.</li>
-            <li>Drawback: Unfriendly API.  jul-to-SLF4J bridge has <a href="http://www.slf4j.org/legacy.html#jul-to-slf4j">very poor performance</a>.</li>
-            </ul>
-            </li>
-            </ul>
-            
-            
-            <p>We are probably not going to choose <code>java.util.logging</code>, but we are undecided whether we should switch to SLF4J or not. What is your opinion? It is very likely for us to respect your comments as much as possible for decision making, so please feel free to leave a comment so that we listen to you and understand what you value more!</p>
-          </div>
-          <div class='footer'>
-            <div class='comments-link'>
-               <a href="/blog/2011/11/22/#disqus_thread">Comments</a>
-            </div>
-            <div class='author'>
-              <a href="http://gleamynode.net/">Trustin Lee</a> on 22 November 2011
+            <div class='footer'>
+              <div class='comments-link'>
+                 <a href="/blog/2012/02/04/#disqus_thread">Comments</a>
+              </div>
+              <div class='author'>
+                <a href="http://www.murkycloud.com/">Norman Maurer</a> on 04 February 2012
+              </div>
             </div>
           </div>
-        </div>
-        <div class='post'>
-          <h2>
-            <a href='/blog/2011/11/17/'>WebSockets in Netty</a>
-          </h2>
-          <div class='body'>
-            
-            
-            <h3>What are WebSockets?</h3>
-            
-            
-            <p>Current web browser communications protocol is limited to the HTTP request and response paradigm - i.e. the browser requests and the server responds.</p>
-            
-            
-            <p>What if we want to use a different communications paradigm?  For example, what if we want to perform 2 way communications where the server sends a request and the browser responds?  A common use case would be the server notifies the client that an event has occurred.</p>
-            
-            
-            <p>This is where <a href="http://en.wikipedia.org/wiki/WebSocket">WebSockets</a> come into play. WebSocket is a technology providing for bi-directional, full-duplex communications channels, over a single Transmission Control Protocol (TCP) socket.  In addition, because WebSockets can co-exist with other HTTP traffic over port 80 and 443, firewalls will not have to be re-configured.</p>
-            
-            
-            <p>WebSocket is part of the <a href="http://dev.w3.org/html5/websockets/">W3C</a> drive towards HTML 5.</p>
-            
-            
-            <h3>Version Confusion</h3>
-            
-            
-            
-            
-            <p>WebSockets is an evolving standard.  </p>
-            
-            
-            <p>Just have a look at the different <a href="http://en.wikipedia.org/wiki/Comparison_of_WebSocket_implementations">implementations</a> and the different versions each support.  There have been numerous version of the WebSocket standards under different names.  </p>
-            
-            
-            <p>So far, browsers have converged on 2 versions.</p>
-            
-            
-            <ul><li><a href="http://tools.ietf.org/html/draft-hixie-thewebsocketprotocol-76">Hixie-76</a>/<a href="http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-00">HyBi-00</a> 
-            <ul><li>Safari 5+, Chrome 4-13 and Firefox 4 supports this standard.</li>
-            <li>There are two names for this version because the Hixie-76 documentation is used as input into the new HiBi IETF working group.</li>
-            <li>A flaw in this standard was discovered in the handshaking which requires exchange of binary data in the HTTP body.  This did not work across some proxy servers.</li>
-            
-            </ul></li>
-            <li><a href="http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-10">HyBi-10</a> 
-            <ul><li>Chrome  14-15, Firefox 7 and IE 10 Developer Preview supports this standard.</li>
-            <li>Handshaking is performed in HTTP request and response headers</li>
-            <li>Uses wire protocol version 8.  You will see &#8220;Sec-WebSocket-Version: 8&#8221; in the HTTP header.</li>
-            </ul></li>
-            </ul>
-            
-            
-            <p>Hybi-00 and Hybi-10 both represents versions of the specification document.  The version of the wire protocol are actually 0 and 8 respectively.</p>
-            
-            
-            <p>Typically, the wire protocol (sequence of bits and bytes sent over the network) does not change between different versions of the specification document.  As such, the wire protocol version is set by the version of the specification document at which the change was made to the wire protocol.  So version 8 of the wire protocol was specified in <a href="http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-08">Hybi-08</a>.</p>
-            
-            
-            
-            
-            <p>What changes are made between different versions of the specification document? Corrections of typos, clarification of concepts and adjustments in handshaking.  The latest version is <a href="http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-17">Hybi-17</a> (with a wire protocol version of 13).</p>
-            
-            
-            <h3>Netty WebSocket Support</h3>
-            
-            
-            <p><strong>Netty 3.2.6</strong> supports Hixie-75 and 76 but <strong>NOT</strong> Hybi-10.  Refer to the <code>org.jboss.netty.handler.codec.http.websocket</code> package and associated examples.</p>
-            
-            
-            
-            
-            <p><strong>Netty 4.0</strong> (unreleased) will support both Hixie-75 and 76&#160;<strong>AND </strong>Hybi-10.  The code is now in the Netty master branch (see <a href="https://github.com/netty/netty/pull/26">pull request #26</a>)<span>.</span></p>
-            
-            
-            <p>Points about this implementation:</p>
-            
-            
-            <ol><li>The existing <code>org.jboss.netty.handler.codec.http.websocket</code> package remains unchanged.  There are quite a few frameworks using this package so we will just leave well enough alone. </li>
-            <li>The new code for web socket support has been placed in the  <code>org.jboss.netty.handler.codec.http.<strong>websocketx</strong></code> package.  The &#8220;x&#8221; is intended to represent multiple versions.</li>
-            
-            <li>The <code>websocketx</code> package supports both WebSocket versions (&#8220;Hixie-75/76/Hybi-00&#8221; and &#8220;Hybi-10&#8221;)</li>
-            <li>The <code>websocketx</code> supports both client and server.</li>
-            <li>Exmaples - refer to <code>package-info.java</code> in each package for instructions.               
-            
-            <ul><li><code>org.jboss.netty.example.http.websocketx.autobahn</code> - echo server used for running AutoBahn tests</li>
-            <li><code>org.jboss.netty.example.http.websocketx.client</code> - web socket client implementation</li>
-            <li><code>org.jboss.netty.example.http.websocketx.server</code> - web socket server implementation that echo the text you send it in upper case</li>
-            <li><code>org.jboss.netty.example.http.websocketx.sslserver </code>- example of how to use SSL with the web socket server</li>
-            </ul></li>
-            <li>Frames                  
-            
-            <ul><li>Data is sent between client and server in frames.</li>
-            <li>The old <code>websocket</code> package implements only the <code>DefaultWebSocketFrame</code>.  Text, binary and closing frames are encapsulated into this single class.</li>
-            <li>The new <code>websocketx</code> package implements frames as a different class: <code>TextWebSocketFrame</code>, <code>BinaryWebSocketFrame</code>, <code>CloseWebSocketFrame</code>, <code>PingWebSocketFrame</code> and <code>PongWebSocketFrame</code>.  I felt that this made the code easier to read and understand.</li>
-            
-            </ul></li>
-            <li>Encoders and Decoders                 
-            <ul><li>Hixie-75/76/Hybi-00 is implemented as <code>WebSocket00FrameDecoder</code> and <code>WebSocket00FrameEncoder</code>.</li>
-            <li>Hybi-10 is implemented as <code>WebSocket08FrameDecoder</code> and <code>WebSocket08FrameEncoder</code>.  The version #8 is used because the wire protocol #8 is used in conjunction with the specification document version #10.</li>
-            </ul></li>
-            
-            <li>Server Handshake                  
-            <ul><li>Implements the handshaking protocol on the server side.</li>
-            <li>Hixie-75/76/Hybi-00 is implemented in <code>WebSocketServerHandshaker00</code></li>
-            <li>Hybi-10 is implemented in <code>WebSocketServerHandshaker10</code></li>
-            <li><code>WebSocketServerHandshakerFactory</code> picks the correct handshaker to use based on the handshaking request sent by the client.</li>
-            <li>See <code>org.jboss.netty.example.http.websocketx.server.WebSocketServer</code> for an example.</li>
-            
-            </ul></li>
-            <li>Client Handshake                  
-            <ul><li>Implements the handshaking protocol on the client side.</li>
-            <li>Hixie-75/76/Hybi-00 is implemented in <code>WebSocketClientHandshaker00</code></li>
-            <li>Hybi-10 is implemented in <code>WebSocketClientHandshaker10</code></li>
-            <li><code>WebSocketClientHandshakerFactory</code> picks the correct handshaker to use based on the version of the specification passed in as a parameter.</li>
-            <li>See <code>org.jboss.netty.example.http.websocketx.client.App</code> for an example.</li>
-            
-            </ul></li>
-            <li> This implementation has passed the <a href="http://www.tavendo.de/autobahn/testsuite.html">AutoBahn</a> Server Tests V 0.4.2&#160;</li>
-            </ol>
-            
-            
-            <h3>Thank You</h3>
-            
-            
-            <p>This implementation uses code from <a href="https://github.com/joewalnes/webbit">Webbit</a> (for which Aslak Hellesøy has written hybi-10 support) and from <a href="https://github.com/cgbystrom/netty-tools">cgbystrom</a> (for web socket clients).</p>
-            
-            
-            <h3>Next</h3>
-            
-            
-            
-            
-            <p>It is my understanding that Chrome 16 will support Hybi-17.  I&#8217;ll be looking to add Netty support for this web socket version shortly.</p>
-          </div>
-          <div class='footer'>
-            <div class='comments-link'>
-               <a href="/blog/2011/11/17/#disqus_thread">Comments</a>
+          <div class='post'>
+            <h2>
+              <a href='/blog/2012/01/19/'>Netty 3.3.0 released - WebSockets!</a>
+            </h2>
+            <div class='body'>
+              <p>The Netty project team is proud to announce Netty 3.3.0.</p>
+              
+              <p>The JAR file is already being uploaded to the Maven central repository, and it's going to be propagated to the central repository soon.  You can also get the full tarball from <a href="/downloads/">the download page</a>.</p>
+              
+              <p>This version introduces a couple exciting features.  The most important one is <a href="http://netty.io/docs/stable/api/org/jboss/netty/handler/codec/http/websocketx/package-summary.html">the new websocketx package</a>, which replaces the old websocket implementation.  As showcased in <a href="/blog/2011/11/17/">our previous post</a>, it provides a fully working WebSocket implementation that supports all known WebSocket specifications and passes <a href="http://www.tavendo.de/autobahn/testsuite.html">the Autobahn test suite</a>.</p>
+              
+              <p>If you are interested in more flexible thread model in your pipeline, you might be interested in the improvements in the <code>org.jboss.netty.handler.execution</code> package.</p>
+              
+              <p>At last but not least, <code>ChannelFuture</code> got a new method called <code>rethrowIfFailed()</code>.  You might find it useful when you have to handle a failure in your client application:</p>
+              
+              <pre><code>ChannelFuture f = ...&#x000A;    // Before:&#x000A;    f.awaitUninterruptibly();&#x000A;    if (f.isFailure()) {&#x000A;        throw new SomeException(f.getCause());&#x000A;    }&#x000A;    &#x000A;    // After:&#x000A;    f.awaitUninterruptibly().rethrowIfFailed();&#x000A;    </code></pre>
+              
+              <p>I hope you like these new features - please feel free to leave comments on this post.  For the detailed list of the changes, please refer to <a href="https://github.com/netty/netty/issues?milestone=3&amp;state=closed">the issue tracker page</a>.</p>
+              
+              <p>If you didn't have a chance to <a href="/community/">contribute</a>, it's better late than never.  Actually, you can contribute a lot more than you think!</p>
             </div>
-            <div class='author'>
-              <a href="http://www.veebsbraindump.com/">veebs</a> on 17 November 2011
+            <div class='footer'>
+              <div class='comments-link'>
+                 <a href="/blog/2012/01/19/#disqus_thread">Comments</a>
+              </div>
+              <div class='author'>
+                <a href="http://gleamynode.net/">Trustin Lee</a> on 19 January 2012
+              </div>
             </div>
           </div>
-        </div>
-        <div class="pagination-links"><span class="current-page">1</span> <a href="/blog/page2.html" class="page-link">2</a> <a href="/blog/page2.html" class="next-link">Next</a> </div>
-        <div class='archive-links'>
-          <a href='archives.html'>Browse the archive</a>
-          &middot;
-          <a href='http://feeds.feedburner.com/netty_project'>RSS Feed</a>
-        </div>
-        
-                    <script type="text/javascript">
-                    var disqus_shortname = 'netty0';
-                    (function () {
-                      var s = document.createElement('script'); s.async = true;
-                      s.src = "http://disqus.com/forums/netty0/count.js";
-                      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-                    }());
-                    </script>
+          <div class='post'>
+            <h2>
+              <a href='/blog/2011/11/23/'>Netty 3.2.7 released</a>
+            </h2>
+            <div class='body'>
+              <p>The Netty project team is proud to announce Netty 3.2.7.</p>
+              
+              <p>The JAR file has been uploaded to JBoss.org Maven repository, and it's going to be propagated to the central repository soon.  You can also get the full tarball from <a href="/downloads/">the download page</a>.</p>
+              
+              <p>For the detailed list of the changes, please refer to <a href="https://github.com/netty/netty/issues?milestone=1&amp;state=closed">the issue tracker page</a>.</p>
+              
+              <p>Looking back, it was a very exciting iteration.  I granted push permission to various people who sent high-quality pull requests frequently, and I believe it leads us to faster yet open and sustainable development of the project.  I'd like to appreciate everyone involved into this effort for their faith on the project and myself.</p>
+              
+              <p>If you didn't have a chance to <a href="/community/">contribute</a>, it's better late than never.  Actually, you can contribute a lot more than you think!</p>
+            </div>
+            <div class='footer'>
+              <div class='comments-link'>
+                 <a href="/blog/2011/11/23/#disqus_thread">Comments</a>
+              </div>
+              <div class='author'>
+                <a href="http://gleamynode.net/">Trustin Lee</a> on 23 November 2011
+              </div>
+            </div>
+          </div>
+          <div class='post'>
+            <h2>
+              <a href='/blog/2011/11/22/'>To use SLF4J or not, that is the question</a>
+            </h2>
+            <div class='body'>
+              <p><em>UPDATE</em>: It's noteworthy that the logging layer we are discussing on is not part of user API.  That is, it's not intended for use by users but by developer (committer).</p>
+              
+              <p>There was recently <a href="https://github.com/netty/netty/issues/64">a discussion</a> in the community about whether we should switch from our own logging layer to something else such as <a href="http://www.slf4j.org/">SLF4J</a> or <code>java.util.logging</code> in Netty 4.  The following is the list of the options we discussed and the related opinions:</p>
+              
+              <ul>
+              <li>Keep the current thin logging layer and modernize it so that it's as easy to use as SLF4J.
+              
+              <ul>
+              <li>Why: Zero dependency. Netty itself does not log very much.</li>
+              <li>Drawback: It doesn't make much sense to have a logging layer.  Netty should focus on I/O.</li>
+              </ul>
+              </li>
+              <li>Use SLF4J.
+              
+              <ul>
+              <li>Why: A lot of open source libraries already use SLF4J.  Nice API.  Zero dependency is not really a problem because your application's classpath will probably have SLF4J anyway because other open source libraries you depend on use it.</li>
+              <li>Drawback: Non-zero API.  People not familiar with setting up SLF4J might have difficulties to run their first Netty application.</li>
+              </ul>
+              </li>
+              <li>Use <code>java.util.logging</code>.
+              
+              <ul>
+              <li>Why: Zero dependency.  Netty doesn't need to provide a logging layer.</li>
+              <li>Drawback: Unfriendly API.  jul-to-SLF4J bridge has <a href="http://www.slf4j.org/legacy.html#jul-to-slf4j">very poor performance</a>.</li>
+              </ul>
+              </li>
+              </ul>
+              
+              
+              <p>We are probably not going to choose <code>java.util.logging</code>, but we are undecided whether we should switch to SLF4J or not. What is your opinion? It is very likely for us to respect your comments as much as possible for decision making, so please feel free to leave a comment so that we listen to you and understand what you value more!</p>
+            </div>
+            <div class='footer'>
+              <div class='comments-link'>
+                 <a href="/blog/2011/11/22/#disqus_thread">Comments</a>
+              </div>
+              <div class='author'>
+                <a href="http://gleamynode.net/">Trustin Lee</a> on 22 November 2011
+              </div>
+            </div>
+          </div>
+          <div class="pagination-links"><span class="current-page">1</span> <a href="/blog/page2.html" class="page-link">2</a> <a href="/blog/page2.html" class="next-link">Next</a> </div>
+          <div class='archive-links'>
+            <a href='archives.html'>Browse the archive</a>
+            &middot;
+            <a href='http://feeds.feedburner.com/netty_project'>RSS Feed</a>
+          </div>
+          
+                      <script type="text/javascript">
+                      var disqus_shortname = 'netty0';
+                      (function () {
+                        var s = document.createElement('script'); s.async = true;
+                        s.src = "http://disqus.com/forums/netty0/count.js";
+                        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+                      }());
+                      </script>
       </div>
       <div id='sidebar'>
         <div id='quicklinks'>
@@ -390,14 +276,14 @@
         //]]>
       </script>
       <script type="text/javascript">
-      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-      </script>
-      <script type="text/javascript">
-      try {
-      var pageTracker = _gat._getTracker("UA-95307-5");
-      pageTracker._trackPageview();
-      } catch(err) {}</script>
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+        try {
+        var pageTracker = _gat._getTracker("UA-95307-5");
+        pageTracker._trackPageview();
+        } catch(err) {}</script>
     </div>
   </body>
 </html>
