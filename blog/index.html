@@ -62,180 +62,159 @@
       </div>
       <div id='content' lang='en'>
         <div class='notice'>
-          Wrote something related with Netty? <a href="mailto:netty@googlegroups.com">Let us know!</a> We will let you publish your post here.
-        </div>
-        <div class='post'>
-          <h2>
-            <a href='/blog/2012/03/03/'>Netty 3.4.0.Alpha1 released!</a>
-          </h2>
-          <div class='body'>
-            <p>The Netty project team is proud to announce the first alpha release of Netty 3.4.0.  Please note that it is an alpha release, so you might need to test it thoroughly before putting it into production.</p>
-            
-            <p>The JAR file is already on <a href="http://search.maven.org/#artifactdetails|io.netty|netty|3.4.0.Alpha1|bundle">Maven central repository</a>. You can also get the full tarball from <a href="/downloads/">the download page</a>.</p>
-            
-            <p>This version introduces an often requested feature that allows a user to schedule an arbitrary task (i.e. <code>java.lang.Runnable</code>) for execution in an I/O thread:</p>
-            
-            <pre><code>Channel ch = ...;&#x000A;    ch.getPipeline().execute(new Runnable() {&#x000A;        @Override&#x000A;        public void run() {&#x000A;            // Some task that is supposed to be executed in an I/O thread&#x000A;        }&#x000A;    });&#x000A;    </code></pre>
-            
-            <p>Another important change is the increased granularity of connect timeout.  Previously, Netty checked connection timeouts every 500 milliseconds, which is eternity in a fast network.  The new check interval is now 10 milliseconds.</p>
-            
-            <p>Along with the new feature and small improvement mentioned above, this release also includes an optimized version of <code>ReplayingDecoder</code> which now avoids unnecessary memory allocation and copy wherever possible.  If you are using a decoder such as <code>HttpMessageDecoder</code>, you will see better numbers in throughput and GC pressure.</p>
-            
-            <p>For the detailed list of the changes, please refer to <a href="https://github.com/netty/netty/issues?milestone=6&amp;state=closed">the issue tracker page</a>.</p>
-            
-            <p>P.S. From this release, you need JDK 1.7 to build Netty.  Please note that Netty still runs fine with Java 5 and it will always do for 3.x releases.</p>
+            Wrote something related with Netty? <a href="mailto:netty@googlegroups.com">Let us know!</a> We will let you publish your post here.
           </div>
-          <div class='footer'>
-            <div class='comments-link'>
-               <a href="/blog/2012/03/03/#disqus_thread">Comments</a>
+          <div class='post'>
+            <h2>
+              <a href='/blog/2012/03/26/'>Netty 3.4.0.Alpha2 released!</a>
+            </h2>
+            <div class='body'>
+              <p>The Netty project team is proud to announce the second alpha release of Netty 3.4.0.  Please note that it is an alpha release, so you might need to test it thoroughly before putting it into production. This should be the last alpha release of the 3.4.0 series and so a stable release should be expected soon.</p>
+              
+              <p>The JAR file is already on <a href="http://search.maven.org/#artifactdetails|io.netty|netty|3.4.0.Alpha2|bundle">Maven central repository</a>. You can also get the full tarball from <a href="/downloads/">the download page</a>.</p>
+              
+              <p>This version introduces a new feature that allows it to share a WorkerPool between different Nio*ChannelFactory instances and so make it easier to share Workers (event-loops) between different factories.</p>
+              
+              <p>Beside this we also fixed a few bugs.</p>
+              
+              <p>For the detailed list of the changes, please refer to <a href="https://github.com/netty/netty/issues?milestone=8&amp;state=closed">the issue tracker page</a>.</p>
             </div>
-            <div class='author'>
-              <a href="http://www.murkycloud.com/">Norman Maurer</a> and <a href="http://gleamynode.net/">Trustin Lee</a> on 03 March 2012
+            <div class='footer'>
+              <div class='comments-link'>
+                 <a href="/blog/2012/03/26/#disqus_thread">Comments</a>
+              </div>
+              <div class='author'>
+                <a href="http://www.murkycloud.com/">Norman Maurer</a> on 26 March 2012
+              </div>
             </div>
           </div>
-        </div>
-        <div class='post'>
-          <h2>
-            <a href='/blog/2012/02/04/'>Netty 3.3.1 released - SPDY Protocol !</a>
-          </h2>
-          <div class='body'>
-            <p>The Netty project team is proud to announce Netty 3.3.1.</p>
-            
-            <p>The JAR file is already on Maven central repository. You can also get the full tarball from <a href="/downloads/">the download page</a>.</p>
-            
-            <p>This version introduces a couple exciting features. The most important one is <a href="http://netty.io/docs/stable/api/org/jboss/netty/handler/codec/spdy/package-summary.html">the new SPDY package</a>, which was contributed by Twitter.</p>
-            
-            <p>If you develop for Android, you will be happy to hear that this release fix the incompability with Android (which was a regression introduced in 3.3.0).</p>
-            
-            <p>Beside this we introduced the possibility to @override the creation of the cumulative buffer in the FrameDecoder class. This allows you to adjust the way the buffer is created and so allows sub-classes to use way that fit them best.</p>
-            
-            <p>For the detailed list of the changes, please refer to <a href="https://github.com/netty/netty/issues?milestone=5&amp;state=closed">the issue tracker page</a>.</p>
-            
-            <p>If you didn't have a chance to <a href="/community/">contribute</a>, you may to consider to do so in the future !</p>
-          </div>
-          <div class='footer'>
-            <div class='comments-link'>
-               <a href="/blog/2012/02/04/#disqus_thread">Comments</a>
+          <div class='post'>
+            <h2>
+              <a href='/blog/2012/03/03/'>Netty 3.4.0.Alpha1 released!</a>
+            </h2>
+            <div class='body'>
+              <p>The Netty project team is proud to announce the first alpha release of Netty 3.4.0.  Please note that it is an alpha release, so you might need to test it thoroughly before putting it into production.</p>
+              
+              <p>The JAR file is already on <a href="http://search.maven.org/#artifactdetails|io.netty|netty|3.4.0.Alpha1|bundle">Maven central repository</a>. You can also get the full tarball from <a href="/downloads/">the download page</a>.</p>
+              
+              <p>This version introduces an often requested feature that allows a user to schedule an arbitrary task (i.e. <code>java.lang.Runnable</code>) for execution in an I/O thread:</p>
+              
+              <pre><code>Channel ch = ...;&#x000A;    ch.getPipeline().execute(new Runnable() {&#x000A;        @Override&#x000A;        public void run() {&#x000A;            // Some task that is supposed to be executed in an I/O thread&#x000A;        }&#x000A;    });&#x000A;    </code></pre>
+              
+              <p>Another important change is the increased granularity of connect timeout.  Previously, Netty checked connection timeouts every 500 milliseconds, which is eternity in a fast network.  The new check interval is now 10 milliseconds.</p>
+              
+              <p>Along with the new feature and small improvement mentioned above, this release also includes an optimized version of <code>ReplayingDecoder</code> which now avoids unnecessary memory allocation and copy wherever possible.  If you are using a decoder such as <code>HttpMessageDecoder</code>, you will see better numbers in throughput and GC pressure.</p>
+              
+              <p>For the detailed list of the changes, please refer to <a href="https://github.com/netty/netty/issues?milestone=6&amp;state=closed">the issue tracker page</a>.</p>
+              
+              <p>P.S. From this release, you need JDK 1.7 to build Netty.  Please note that Netty still runs fine with Java 5 and it will always do for 3.x releases.</p>
             </div>
-            <div class='author'>
-              <a href="http://www.murkycloud.com/">Norman Maurer</a> on 04 February 2012
-            </div>
-          </div>
-        </div>
-        <div class='post'>
-          <h2>
-            <a href='/blog/2012/01/19/'>Netty 3.3.0 released - WebSockets!</a>
-          </h2>
-          <div class='body'>
-            <p>The Netty project team is proud to announce Netty 3.3.0.</p>
-            
-            <p>The JAR file is already being uploaded to the Maven central repository, and it's going to be propagated to the central repository soon.  You can also get the full tarball from <a href="/downloads/">the download page</a>.</p>
-            
-            <p>This version introduces a couple exciting features.  The most important one is <a href="http://netty.io/docs/stable/api/org/jboss/netty/handler/codec/http/websocketx/package-summary.html">the new websocketx package</a>, which replaces the old websocket implementation.  As showcased in <a href="/blog/2011/11/17/">our previous post</a>, it provides a fully working WebSocket implementation that supports all known WebSocket specifications and passes <a href="http://www.tavendo.de/autobahn/testsuite.html">the Autobahn test suite</a>.</p>
-            
-            <p>If you are interested in more flexible thread model in your pipeline, you might be interested in the improvements in the <code>org.jboss.netty.handler.execution</code> package.</p>
-            
-            <p>At last but not least, <code>ChannelFuture</code> got a new method called <code>rethrowIfFailed()</code>.  You might find it useful when you have to handle a failure in your client application:</p>
-            
-            <pre><code>ChannelFuture f = ...&#x000A;    // Before:&#x000A;    f.awaitUninterruptibly();&#x000A;    if (f.isFailure()) {&#x000A;        throw new SomeException(f.getCause());&#x000A;    }&#x000A;    &#x000A;    // After:&#x000A;    f.awaitUninterruptibly().rethrowIfFailed();&#x000A;    </code></pre>
-            
-            <p>I hope you like these new features - please feel free to leave comments on this post.  For the detailed list of the changes, please refer to <a href="https://github.com/netty/netty/issues?milestone=3&amp;state=closed">the issue tracker page</a>.</p>
-            
-            <p>If you didn't have a chance to <a href="/community/">contribute</a>, it's better late than never.  Actually, you can contribute a lot more than you think!</p>
-          </div>
-          <div class='footer'>
-            <div class='comments-link'>
-               <a href="/blog/2012/01/19/#disqus_thread">Comments</a>
-            </div>
-            <div class='author'>
-              <a href="http://gleamynode.net/">Trustin Lee</a> on 19 January 2012
+            <div class='footer'>
+              <div class='comments-link'>
+                 <a href="/blog/2012/03/03/#disqus_thread">Comments</a>
+              </div>
+              <div class='author'>
+                <a href="http://www.murkycloud.com/">Norman Maurer</a> and <a href="http://gleamynode.net/">Trustin Lee</a> on 03 March 2012
+              </div>
             </div>
           </div>
-        </div>
-        <div class='post'>
-          <h2>
-            <a href='/blog/2011/11/23/'>Netty 3.2.7 released</a>
-          </h2>
-          <div class='body'>
-            <p>The Netty project team is proud to announce Netty 3.2.7.</p>
-            
-            <p>The JAR file has been uploaded to JBoss.org Maven repository, and it's going to be propagated to the central repository soon.  You can also get the full tarball from <a href="/downloads/">the download page</a>.</p>
-            
-            <p>For the detailed list of the changes, please refer to <a href="https://github.com/netty/netty/issues?milestone=1&amp;state=closed">the issue tracker page</a>.</p>
-            
-            <p>Looking back, it was a very exciting iteration.  I granted push permission to various people who sent high-quality pull requests frequently, and I believe it leads us to faster yet open and sustainable development of the project.  I'd like to appreciate everyone involved into this effort for their faith on the project and myself.</p>
-            
-            <p>If you didn't have a chance to <a href="/community/">contribute</a>, it's better late than never.  Actually, you can contribute a lot more than you think!</p>
-          </div>
-          <div class='footer'>
-            <div class='comments-link'>
-               <a href="/blog/2011/11/23/#disqus_thread">Comments</a>
+          <div class='post'>
+            <h2>
+              <a href='/blog/2012/02/04/'>Netty 3.3.1 released - SPDY Protocol !</a>
+            </h2>
+            <div class='body'>
+              <p>The Netty project team is proud to announce Netty 3.3.1.</p>
+              
+              <p>The JAR file is already on Maven central repository. You can also get the full tarball from <a href="/downloads/">the download page</a>.</p>
+              
+              <p>This version introduces a couple exciting features. The most important one is <a href="http://netty.io/docs/stable/api/org/jboss/netty/handler/codec/spdy/package-summary.html">the new SPDY package</a>, which was contributed by Twitter.</p>
+              
+              <p>If you develop for Android, you will be happy to hear that this release fix the incompability with Android (which was a regression introduced in 3.3.0).</p>
+              
+              <p>Beside this we introduced the possibility to @override the creation of the cumulative buffer in the FrameDecoder class. This allows you to adjust the way the buffer is created and so allows sub-classes to use way that fit them best.</p>
+              
+              <p>For the detailed list of the changes, please refer to <a href="https://github.com/netty/netty/issues?milestone=5&amp;state=closed">the issue tracker page</a>.</p>
+              
+              <p>If you didn't have a chance to <a href="/community/">contribute</a>, you may to consider to do so in the future !</p>
             </div>
-            <div class='author'>
-              <a href="http://gleamynode.net/">Trustin Lee</a> on 23 November 2011
-            </div>
-          </div>
-        </div>
-        <div class='post'>
-          <h2>
-            <a href='/blog/2011/11/22/'>To use SLF4J or not, that is the question</a>
-          </h2>
-          <div class='body'>
-            <p><em>UPDATE</em>: It's noteworthy that the logging layer we are discussing on is not part of user API.  That is, it's not intended for use by users but by developer (committer).</p>
-            
-            <p>There was recently <a href="https://github.com/netty/netty/issues/64">a discussion</a> in the community about whether we should switch from our own logging layer to something else such as <a href="http://www.slf4j.org/">SLF4J</a> or <code>java.util.logging</code> in Netty 4.  The following is the list of the options we discussed and the related opinions:</p>
-            
-            <ul>
-            <li>Keep the current thin logging layer and modernize it so that it's as easy to use as SLF4J.
-            
-            <ul>
-            <li>Why: Zero dependency. Netty itself does not log very much.</li>
-            <li>Drawback: It doesn't make much sense to have a logging layer.  Netty should focus on I/O.</li>
-            </ul>
-            </li>
-            <li>Use SLF4J.
-            
-            <ul>
-            <li>Why: A lot of open source libraries already use SLF4J.  Nice API.  Zero dependency is not really a problem because your application's classpath will probably have SLF4J anyway because other open source libraries you depend on use it.</li>
-            <li>Drawback: Non-zero API.  People not familiar with setting up SLF4J might have difficulties to run their first Netty application.</li>
-            </ul>
-            </li>
-            <li>Use <code>java.util.logging</code>.
-            
-            <ul>
-            <li>Why: Zero dependency.  Netty doesn't need to provide a logging layer.</li>
-            <li>Drawback: Unfriendly API.  jul-to-SLF4J bridge has <a href="http://www.slf4j.org/legacy.html#jul-to-slf4j">very poor performance</a>.</li>
-            </ul>
-            </li>
-            </ul>
-            
-            
-            <p>We are probably not going to choose <code>java.util.logging</code>, but we are undecided whether we should switch to SLF4J or not. What is your opinion? It is very likely for us to respect your comments as much as possible for decision making, so please feel free to leave a comment so that we listen to you and understand what you value more!</p>
-          </div>
-          <div class='footer'>
-            <div class='comments-link'>
-               <a href="/blog/2011/11/22/#disqus_thread">Comments</a>
-            </div>
-            <div class='author'>
-              <a href="http://gleamynode.net/">Trustin Lee</a> on 22 November 2011
+            <div class='footer'>
+              <div class='comments-link'>
+                 <a href="/blog/2012/02/04/#disqus_thread">Comments</a>
+              </div>
+              <div class='author'>
+                <a href="http://www.murkycloud.com/">Norman Maurer</a> on 04 February 2012
+              </div>
             </div>
           </div>
-        </div>
-        <div class="pagination-links"><span class="current-page">1</span> <a href="/blog/page/2.html" class="page-link">2</a> <a href="/blog/page/2.html" class="next-link">Next</a> </div>
-        <div class='archive-links'>
-          <a href='archives.html'>Browse the archive</a>
-          &middot;
-          <a href='http://feeds.feedburner.com/netty_project'>RSS Feed</a>
-        </div>
-        
-                    <script type="text/javascript">
-                    var disqus_shortname = 'netty0';
-                    (function () {
-                      var s = document.createElement('script'); s.async = true;
-                      s.src = "http://disqus.com/forums/netty0/count.js";
-                      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-                    }());
-                    </script>
+          <div class='post'>
+            <h2>
+              <a href='/blog/2012/01/19/'>Netty 3.3.0 released - WebSockets!</a>
+            </h2>
+            <div class='body'>
+              <p>The Netty project team is proud to announce Netty 3.3.0.</p>
+              
+              <p>The JAR file is already being uploaded to the Maven central repository, and it's going to be propagated to the central repository soon.  You can also get the full tarball from <a href="/downloads/">the download page</a>.</p>
+              
+              <p>This version introduces a couple exciting features.  The most important one is <a href="http://netty.io/docs/stable/api/org/jboss/netty/handler/codec/http/websocketx/package-summary.html">the new websocketx package</a>, which replaces the old websocket implementation.  As showcased in <a href="/blog/2011/11/17/">our previous post</a>, it provides a fully working WebSocket implementation that supports all known WebSocket specifications and passes <a href="http://www.tavendo.de/autobahn/testsuite.html">the Autobahn test suite</a>.</p>
+              
+              <p>If you are interested in more flexible thread model in your pipeline, you might be interested in the improvements in the <code>org.jboss.netty.handler.execution</code> package.</p>
+              
+              <p>At last but not least, <code>ChannelFuture</code> got a new method called <code>rethrowIfFailed()</code>.  You might find it useful when you have to handle a failure in your client application:</p>
+              
+              <pre><code>ChannelFuture f = ...&#x000A;    // Before:&#x000A;    f.awaitUninterruptibly();&#x000A;    if (f.isFailure()) {&#x000A;        throw new SomeException(f.getCause());&#x000A;    }&#x000A;    &#x000A;    // After:&#x000A;    f.awaitUninterruptibly().rethrowIfFailed();&#x000A;    </code></pre>
+              
+              <p>I hope you like these new features - please feel free to leave comments on this post.  For the detailed list of the changes, please refer to <a href="https://github.com/netty/netty/issues?milestone=3&amp;state=closed">the issue tracker page</a>.</p>
+              
+              <p>If you didn't have a chance to <a href="/community/">contribute</a>, it's better late than never.  Actually, you can contribute a lot more than you think!</p>
+            </div>
+            <div class='footer'>
+              <div class='comments-link'>
+                 <a href="/blog/2012/01/19/#disqus_thread">Comments</a>
+              </div>
+              <div class='author'>
+                <a href="http://gleamynode.net/">Trustin Lee</a> on 19 January 2012
+              </div>
+            </div>
+          </div>
+          <div class='post'>
+            <h2>
+              <a href='/blog/2011/11/23/'>Netty 3.2.7 released</a>
+            </h2>
+            <div class='body'>
+              <p>The Netty project team is proud to announce Netty 3.2.7.</p>
+              
+              <p>The JAR file has been uploaded to JBoss.org Maven repository, and it's going to be propagated to the central repository soon.  You can also get the full tarball from <a href="/downloads/">the download page</a>.</p>
+              
+              <p>For the detailed list of the changes, please refer to <a href="https://github.com/netty/netty/issues?milestone=1&amp;state=closed">the issue tracker page</a>.</p>
+              
+              <p>Looking back, it was a very exciting iteration.  I granted push permission to various people who sent high-quality pull requests frequently, and I believe it leads us to faster yet open and sustainable development of the project.  I'd like to appreciate everyone involved into this effort for their faith on the project and myself.</p>
+              
+              <p>If you didn't have a chance to <a href="/community/">contribute</a>, it's better late than never.  Actually, you can contribute a lot more than you think!</p>
+            </div>
+            <div class='footer'>
+              <div class='comments-link'>
+                 <a href="/blog/2011/11/23/#disqus_thread">Comments</a>
+              </div>
+              <div class='author'>
+                <a href="http://gleamynode.net/">Trustin Lee</a> on 23 November 2011
+              </div>
+            </div>
+          </div>
+          <div class="pagination-links"><span class="current-page">1</span> <a href="/blog/page2.html" class="page-link">2</a> <a href="/blog/page2.html" class="next-link">Next</a> </div>
+          <div class='archive-links'>
+            <a href='archives.html'>Browse the archive</a>
+            &middot;
+            <a href='http://feeds.feedburner.com/netty_project'>RSS Feed</a>
+          </div>
+          
+                      <script type="text/javascript">
+                      var disqus_shortname = 'netty0';
+                      (function () {
+                        var s = document.createElement('script'); s.async = true;
+                        s.src = "http://disqus.com/forums/netty0/count.js";
+                        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+                      }());
+                      </script>
       </div>
       <div id='sidebar'>
         <div id='quicklinks'>
@@ -279,14 +258,14 @@
         //]]>
       </script>
       <script type="text/javascript">
-      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-      </script>
-      <script type="text/javascript">
-      try {
-      var pageTracker = _gat._getTracker("UA-95307-5");
-      pageTracker._trackPageview();
-      } catch(err) {}</script>
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+        try {
+        var pageTracker = _gat._getTracker("UA-95307-5");
+        pageTracker._trackPageview();
+        } catch(err) {}</script>
     </div>
   </body>
 </html>
