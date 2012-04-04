@@ -66,6 +66,75 @@
         </div>
         <div class='post'>
           <h2>
+            <a href='/blog/2011/11/23/'>Netty 3.2.7 released</a>
+          </h2>
+          <div class='body'>
+            <p>The Netty project team is proud to announce Netty 3.2.7.</p>
+            
+            <p>The JAR file has been uploaded to JBoss.org Maven repository, and it's going to be propagated to the central repository soon.  You can also get the full tarball from <a href="/downloads/">the download page</a>.</p>
+            
+            <p>For the detailed list of the changes, please refer to <a href="https://github.com/netty/netty/issues?milestone=1&amp;state=closed">the issue tracker page</a>.</p>
+            
+            <p>Looking back, it was a very exciting iteration.  I granted push permission to various people who sent high-quality pull requests frequently, and I believe it leads us to faster yet open and sustainable development of the project.  I'd like to appreciate everyone involved into this effort for their faith on the project and myself.</p>
+            
+            <p>If you didn't have a chance to <a href="/community/">contribute</a>, it's better late than never.  Actually, you can contribute a lot more than you think!</p>
+          </div>
+          <div class='footer'>
+            <div class='comments-link'>
+               <a href="/blog/2011/11/23/#disqus_thread">Comments</a>
+            </div>
+            <div class='author'>
+              <a href="http://gleamynode.net/">Trustin Lee</a> on 23 November 2011
+            </div>
+          </div>
+        </div>
+        <div class='post'>
+          <h2>
+            <a href='/blog/2011/11/22/'>To use SLF4J or not, that is the question</a>
+          </h2>
+          <div class='body'>
+            <p><em>UPDATE</em>: It's noteworthy that the logging layer we are discussing on is not part of user API.  That is, it's not intended for use by users but by developer (committer).</p>
+            
+            <p>There was recently <a href="https://github.com/netty/netty/issues/64">a discussion</a> in the community about whether we should switch from our own logging layer to something else such as <a href="http://www.slf4j.org/">SLF4J</a> or <code>java.util.logging</code> in Netty 4.  The following is the list of the options we discussed and the related opinions:</p>
+            
+            <ul>
+            <li>Keep the current thin logging layer and modernize it so that it's as easy to use as SLF4J.
+            
+            <ul>
+            <li>Why: Zero dependency. Netty itself does not log very much.</li>
+            <li>Drawback: It doesn't make much sense to have a logging layer.  Netty should focus on I/O.</li>
+            </ul>
+            </li>
+            <li>Use SLF4J.
+            
+            <ul>
+            <li>Why: A lot of open source libraries already use SLF4J.  Nice API.  Zero dependency is not really a problem because your application's classpath will probably have SLF4J anyway because other open source libraries you depend on use it.</li>
+            <li>Drawback: Non-zero API.  People not familiar with setting up SLF4J might have difficulties to run their first Netty application.</li>
+            </ul>
+            </li>
+            <li>Use <code>java.util.logging</code>.
+            
+            <ul>
+            <li>Why: Zero dependency.  Netty doesn't need to provide a logging layer.</li>
+            <li>Drawback: Unfriendly API.  jul-to-SLF4J bridge has <a href="http://www.slf4j.org/legacy.html#jul-to-slf4j">very poor performance</a>.</li>
+            </ul>
+            </li>
+            </ul>
+            
+            
+            <p>We are probably not going to choose <code>java.util.logging</code>, but we are undecided whether we should switch to SLF4J or not. What is your opinion? It is very likely for us to respect your comments as much as possible for decision making, so please feel free to leave a comment so that we listen to you and understand what you value more!</p>
+          </div>
+          <div class='footer'>
+            <div class='comments-link'>
+               <a href="/blog/2011/11/22/#disqus_thread">Comments</a>
+            </div>
+            <div class='author'>
+              <a href="http://gleamynode.net/">Trustin Lee</a> on 22 November 2011
+            </div>
+          </div>
+        </div>
+        <div class='post'>
+          <h2>
             <a href='/blog/2011/11/17/'>WebSockets in Netty</a>
           </h2>
           <div class='body'>
