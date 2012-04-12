@@ -2,9 +2,50 @@
 <feed xml:lang='en-US' xmlns='http://www.w3.org/2005/Atom'>
   <id>http://netty.io/</id>
   <title>Netty</title>
-  <updated>2012-04-04T00:00:00Z</updated>
+  <updated>2012-04-12T00:00:00Z</updated>
   <link href='http://netty.io/blog/index.atom' rel='self' type='application/atom+xml' />
   <link href='http://netty.io/' rel='alternate' type='text/html' />
+  <entry>
+    <id>http://netty.io/blog/2012/04/12/</id>
+    <title>Netty 3.4.0.Final released!</title>
+    <updated>2012-04-12T00:00:00Z</updated>
+    <link href='http://netty.io/blog/2012/04/12/' rel='alternate' type='text/html' />
+    <author>
+      <name><a href="http://www.murkycloud.com/">Norman Maurer</a></name>
+    </author>
+    <summary>
+      The Netty project team is proud to announce the final release of Netty 3.4.0.
+      
+      The JAR file is already on Maven central repository. You can also get the full tarball from the download page.
+      
+      This version contains a handful bugfixes compared to the previous 3.4.0.Beta1 release.
+      
+      Here are the changes that are most import compared to 3.4.0.Beta1:
+      
+      
+      Implement Websocket close frame status code and reason text. See the rfc6455.
+      Remove of Redis codec which will be part of 4.0.0.
+      HttpClientCodec now throws a PrematureChannelClosureException if the connection gets closed before all responses for all sent requests are received. Before we did not notify the user about......
+    </summary>
+    <content type='html'>
+      &lt;p&gt;The Netty project team is proud to announce the final release of Netty 3.4.0.&lt;/p&gt;
+      
+      &lt;p&gt;The JAR file is already on &lt;a href=&quot;http://search.maven.org/#artifactdetails|io.netty|netty|3.4.0.Final|bundle&quot;&gt;Maven central repository&lt;/a&gt;. You can also get the full tarball from &lt;a href=&quot;http://netty.io/downloads/&quot;&gt;the download page&lt;/a&gt;.&lt;/p&gt;
+      
+      &lt;p&gt;This version contains a handful bugfixes compared to the previous 3.4.0.Beta1 release.&lt;/p&gt;
+      
+      &lt;p&gt;Here are the changes that are most import compared to 3.4.0.Beta1:&lt;/p&gt;
+      
+      &lt;ul&gt;
+      &lt;li&gt;Implement Websocket close frame status code and reason text. See the &lt;a href=&quot;See%20http://tools.ietf.org/html/rfc6455#section-5.5.1&quot;&gt;rfc6455&lt;/a&gt;.&lt;/li&gt;
+      &lt;li&gt;Remove of Redis codec which will be part of 4.0.0.&lt;/li&gt;
+      &lt;li&gt;HttpClientCodec now throws a PrematureChannelClosureException if the connection gets closed before all responses for all sent requests are received. Before we did not notify the user about it, so if you are not interested in this you will need to ignore this exception in your exception handling code.&lt;/li&gt;
+      &lt;/ul&gt;
+      
+      
+      &lt;p&gt;For the detailed list of the changes, please refer to &lt;a href=&quot;https://github.com/netty/netty/issues?sort=created&amp;amp;direction=desc&amp;amp;state=closed&amp;amp;page=1&amp;amp;milestone=7&quot;&gt;the issue tracker page&lt;/a&gt;.&lt;/p&gt;
+    </content>
+  </entry>
   <entry>
     <id>http://netty.io/blog/2012/04/04/</id>
     <title>Netty 3.4.0.Beta1 released!</title>
