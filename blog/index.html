@@ -78,7 +78,7 @@
             <p>Here are the changes that are most import compared to 3.4.0.Beta1:</p>
             
             <ul>
-            <li>Implement Websocket close frame status code and reason text. See the <a href="See%20http://tools.ietf.org/html/rfc6455#section-5.5.1">rfc6455</a>.</li>
+            <li>Implement Websocket close frame status code and reason text. See the <a href="http://tools.ietf.org/html/rfc6455#section-5.5.1">rfc6455</a>.</li>
             <li>Remove of Redis codec which will be part of 4.0.0.</li>
             <li>HttpClientCodec now throws a PrematureChannelClosureException if the connection gets closed before all responses for all sent requests are received. Before we did not notify the user about it, so if you are not interested in this you will need to ignore this exception in your exception handling code.</li>
             </ul>
