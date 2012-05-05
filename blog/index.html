@@ -74,10 +74,13 @@
             <p>The JAR file can be found on <a href="http://search.maven.org/#artifactdetails|io.netty|netty|3.4.3.Final|bundle">Maven central repository</a>. You can also get the full tarball from <a href="/downloads/">the download page</a>.</p>
             
             <p>The most importent bugfix is the removal of a deadlock in ChunkedWriteHandler that could kick in sometimes. See <a href="https://github.com/netty/netty/issues/297">#297</a> for more details.
-            Beside this we also ship two small low-risk features which may be helpful for some users:
-            %ul
-              %li ChannelLocal implements Iterable now. See <a href="https://github.com/netty/netty/issues/307">#307</a>.
-              %li SSLHandler allow to detect incoming close_notify messages via a ChannelFuture that get notified. See <a href="https://github.com/netty/netty/issues/137">#137</a></p>
+            Beside this we also ship two small low-risk features which may be helpful for some users:</p>
+            
+            <ul>
+            <li>ChannelLocal implements Iterable now. See <a href="https://github.com/netty/netty/issues/307">#307</a>.</li>
+            <li>SSLHandler allow to detect incoming close_notify messages via a ChannelFuture that get notified. See <a href="https://github.com/netty/netty/issues/137">#137</a></li>
+            </ul>
+            
             
             <p>Beside this we had a handful of other bugfixes which are included.
             For the detailed list of the changes, please refer to <a href="https://github.com/netty/netty/issues?sort=created&amp;direction=desc&amp;state=closed&amp;page=1&amp;milestone=13">the issue tracker page</a>.</p>
