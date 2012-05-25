@@ -66,6 +66,47 @@
         </div>
         <div class='post'>
           <h2>
+            <a href='/blog/2012/05/25/'>Netty 3.5.0.Beta1 released!</a>
+          </h2>
+          <div class='body'>
+            <p>The Netty project team is proud to announce the first beta release of Netty 3.5.0. Please note that it's a beta release, so you might need to test it thoroughly before putting it into production.</p>
+            
+            <p>The JAR file is already on <a href="http://search.maven.org/#artifactdetails|io.netty|netty|3.5.0.Beta1|bundle">Maven central repository</a>. You can also get the full tarball from <a href="/downloads/">the download page</a>.</p>
+            
+            <p>This version introduces various features. The most important are:</p>
+            
+            <ul>
+            <li><a href="https://github.com/netty/netty/pull/353">SPDY3</a> support. Thanks again to our friends at twitter!</li>
+            <li><a href="https://github.com/netty/netty/issues/216">NIO UDP Multicast</a> support (only avaible when using jdk7)</li>
+            <li><a href="https://github.com/netty/netty/pull/271">Gathering Writes</a> support (only avaible when using jdk7)</li>
+            <li><a href="https://github.com/netty/netty/pull/286">HTTP POST</a> support</li>
+            <li><a href="https://github.com/netty/netty/pull/340">Handler</a> for traffic shaping</li>
+            <li><a href="https://github.com/netty/netty/pull/340">Handler</a> for ip based filtering</li>
+            <li><a href="https://github.com/netty/netty/pull/324">Encoder/Decoder</a> that supports marshall / unmarshall of java objects via JBoss Marshalling (can be used as replacement for ObjectEncoder/ObjectDecoder)</li>
+            </ul>
+            
+            
+            <p><b>API Breakage in SPDY</b></p>
+            
+            <p>Please note that this release includes some "small" API Breakage in the spdy package, which should not effect most of you. All static field values that were located in the SpdyHeaders.HttpNames class were moved to the Spdy2Headers.HttpNames class. The ones that are now in SpdyHeaders.HttpNames are related to SPDY3. The ones in Spdy2Headers are the old ones that are related to SPDY2.</p>
+            
+            <p>Along with the new features mentioned above, this release also includes many other bugfixes.</p>
+            
+            <p>For the detailed list of the changes, please refer to <a href="https://github.com/netty/netty/issues?milestone=11&amp;page=1&amp;state=closed">the issue tracker page</a>.</p>
+            
+            <p>Enjoy!</p>
+          </div>
+          <div class='footer'>
+            <div class='comments-link'>
+               <a href="/blog/2012/05/25/#disqus_thread">Comments</a>
+            </div>
+            <div class='author'>
+              <a href="http://www.murkycloud.com/">Norman Maurer</a> on 25 May 2012
+            </div>
+          </div>
+        </div>
+        <div class='post'>
+          <h2>
             <a href='/blog/2012/05/16/'>Netty 3.4.5.Final released!</a>
           </h2>
           <div class='body'>
@@ -159,33 +200,6 @@
             </div>
             <div class='author'>
               <a href="http://www.murkycloud.com/">Norman Maurer</a> on 27 April 2012
-            </div>
-          </div>
-        </div>
-        <div class='post'>
-          <h2>
-            <a href='/blog/2012/04/20/'>Netty 3.4.1.Final released!</a>
-          </h2>
-          <div class='body'>
-            <p>The Netty project team is proud to announce the final release of Netty 3.4.1. This is a bugfix release of the 3.4.x series.</p>
-            
-            <p>The JAR file is already on <a href="http://search.maven.org/#artifactdetails|io.netty|netty|3.4.1.Final|bundle">Maven central repository</a>. You can also get the full tarball from <a href="/downloads/">the download page</a>.</p>
-            
-            <p>Netty 3.4.0.Final contains a regression which effects the ReplayDecoder and so any Decoder that is based on it (the most used is the HttpDecoder). Every user of Netty 3.4.0.Final should consider upgrading t0 3.4.1.Final as soon as possible.</p>
-            
-            <p>This release also allows to disable the use of sun.misc.Unsafe to make it easier to run Netty in OSGI enviroments or Application Servers that ship some custom ClassLoader. To explicit disable the use of sun.misc.Unsafe just specify "org.jboss.netty.tryUnsafe=false" as System Property.</p>
-            
-            <p>Netty 3.4.1 ships now with a workaround for a java bug (which is only fixed in java 7) that made it impossible to connect to link-local-addresses which contains a scope id / zone id. See <a href="https://github.com/netty/netty/issues/267">#267</a> for more details.</p>
-            
-            <p>Beside this we had a handful of other bugfixes, most important in the Websocket handling (client-side).
-            For the detailed list of the changes, please refer to <a href="https://github.com/netty/netty/issues?sort=created&amp;direction=desc&amp;state=closed&amp;page=1&amp;milestone=10">the issue tracker page</a>.</p>
-          </div>
-          <div class='footer'>
-            <div class='comments-link'>
-               <a href="/blog/2012/04/20/#disqus_thread">Comments</a>
-            </div>
-            <div class='author'>
-              <a href="http://www.murkycloud.com/">Norman Maurer</a> on 20 April 2012
             </div>
           </div>
         </div>
