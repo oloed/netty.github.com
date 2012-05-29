@@ -66,6 +66,28 @@
         </div>
         <div class='post'>
           <h2>
+            <a href='/blog/2012/05/29/'>Netty 3.4.6.Final released!</a>
+          </h2>
+          <div class='body'>
+            <p>The Netty project team is proud to announce Bugfix release of the 3.4.x series.</p>
+            
+            <p>The JAR file is already on <a href="http://search.maven.org/#artifactdetails|io.netty|netty|3.4.6.Final|bundle">Maven central repository</a>. You can also get the full tarball from <a href="/downloads/">the download page</a>.</p>
+            
+            <p>This release contains only bugfixes. For the detailed list of the changes, please refer to <a href="https://github.com/netty/netty/issues?milestone=17&amp;state=closed">the issue tracker page</a>.</p>
+            
+            <p>Enjoy!</p>
+          </div>
+          <div class='footer'>
+            <div class='comments-link'>
+               <a href="/blog/2012/05/29/#disqus_thread">Comments</a>
+            </div>
+            <div class='author'>
+              <a href="http://www.murkycloud.com/">Norman Maurer</a> on 29 May 2012
+            </div>
+          </div>
+        </div>
+        <div class='post'>
+          <h2>
             <a href='/blog/2012/05/25/'>Netty 3.5.0.Beta1 released!</a>
           </h2>
           <div class='body'>
@@ -174,32 +196,6 @@
             </div>
             <div class='author'>
               <a href="http://www.murkycloud.com/">Norman Maurer</a> on 05 May 2012
-            </div>
-          </div>
-        </div>
-        <div class='post'>
-          <h2>
-            <a href='/blog/2012/04/27/'>Netty 3.4.2.Final released!</a>
-          </h2>
-          <div class='body'>
-            <p>The Netty project team is proud to announce the final release of Netty 3.4.2. This is a bugfix-only release of the 3.4.x series.</p>
-            
-            <p>The JAR file can be found on <a href="http://search.maven.org/#artifactdetails|io.netty|netty|3.4.2.Final|bundle">Maven central repository</a>. You can also get the full tarball from <a href="/downloads/">the download page</a>.</p>
-            
-            <p>This release includes an important change that allows to specify a maximum frame size for the <a href="http://netty.io/docs/stable/api/org/jboss/netty/handler/codec/http/websocketx/package-frame.html">WebSocket Frame Decoders</a>. This helps to prevent DOS attacks and should be used in all cases as it has security impacts.
-            See <a href="https://github.com/netty/netty/issues/283">#283</a> for more informations. Everyone who uses Netty WebSockets implementation should upgrade as soon as possible and change his code base to enforce a limit.</p>
-            
-            <p>An other important improvement is the memory-usage optimization of the <a href="http://netty.io/docs/stable/api/org/jboss/netty/handler/codec/replay/ReplayingDecoder.html">ReplayingDecoder</a> and <a href="http://netty.io/docs/stable/api/org/jboss/netty/handler/codec/frame/FrameDecoder.html">FrameDecoder</a>. This two Decoders are sub-classed by many other Decoders so chances are good that you can benefit from the changes. The used memory of each instance should be down to a minimum now. For more details checkout out <a href="https://github.com/netty/netty/pull/280">#280</a>.</p>
-            
-            <p>Beside this we had a handful of other bugfixes which are included.
-            For the detailed list of the changes, please refer to <a href="https://github.com/netty/netty/issues?sort=created&amp;direction=desc&amp;state=closed&amp;page=1&amp;milestone=12">the issue tracker page</a>.</p>
-          </div>
-          <div class='footer'>
-            <div class='comments-link'>
-               <a href="/blog/2012/04/27/#disqus_thread">Comments</a>
-            </div>
-            <div class='author'>
-              <a href="http://www.murkycloud.com/">Norman Maurer</a> on 27 April 2012
             </div>
           </div>
         </div>
