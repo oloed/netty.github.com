@@ -66,6 +66,28 @@
         </div>
         <div class='post'>
           <h2>
+            <a href='/blog/2012/05/30/'>Sneak Peek of Netty 4.0 through Examples</a>
+          </h2>
+          <div class='body'>
+            <p>Interested in the recent progress of Netty 4.0.0.Alpha1?  If you did not have a chance to keep track of the recent massive API changes in the master, you might want to start from <a href="https://github.com/netty/netty/tree/master/example/src/main/java/io/netty/example">the examples I have just forward-ported</a>.</p>
+            
+            <p>The migration guide will be out and explain the new concepts and changes in 4.0, but basically you will find the code looks similar in most examples.  For the rough list of changes in 4.0, please read <a href="https://groups.google.com/forum/#!topic/netty/PFhK9oFRpvA">this</a> and <a href="https://groups.google.com/forum/#!topic/netty/6dTbdXmHvD0">this</a>.</p>
+            
+            <p>I would recommend you to load the whole project into your IDE and enjoy easier navigation.  It does not build completely yet, but you can run many of the examples such as HTTP and WebSockets by yourself if your IDE allows running a project with compilation errors (Eclipse does.)</p>
+            
+            <p>If you feel like participating into what is happening in Netty 4.0, it is really good time to join <a href="https://groups.google.com/forum/#!forum/netty">the developer group</a> to give a quick feed back, ask questions, and suggest an idea.  We are going to release the first alpha pretty soon!</p>
+          </div>
+          <div class='footer'>
+            <div class='comments-link'>
+               <a href="/blog/2012/05/30/#disqus_thread">Comments</a>
+            </div>
+            <div class='author'>
+              <a href="http://gleamynode.net/">Trustin Lee</a> on 30 May 2012
+            </div>
+          </div>
+        </div>
+        <div class='post'>
+          <h2>
             <a href='/blog/2012/05/29/'>Netty 3.4.6.Final released!</a>
           </h2>
           <div class='body'>
@@ -164,38 +186,6 @@
             </div>
             <div class='author'>
               <a href="http://www.murkycloud.com/">Norman Maurer</a> on 06 May 2012
-            </div>
-          </div>
-        </div>
-        <div class='post'>
-          <h2>
-            <a href='/blog/2012/05/05/'>Netty 3.4.3.Final released!</a>
-          </h2>
-          <div class='body'>
-            <p>The Netty project team is proud to announce the final release of Netty 3.4.3. This is a bugfix release of the 3.4.x series</p>
-            
-            <p>The JAR file can be found on <a href="http://search.maven.org/#artifactdetails|io.netty|netty|3.4.3.Final|bundle">Maven central repository</a>. You can also get the full tarball from <a href="/downloads/">the download page</a>.</p>
-            
-            <p>The most importent bugfix is the removal of a deadlock in ChunkedWriteHandler that could kick in sometimes. See <a href="https://github.com/netty/netty/issues/297">#297</a> for more details.
-            Beside this we also ship two small low-risk features which may be helpful for some users:</p>
-            
-            <ul>
-            <li>ChannelLocal implements Iterable now. See <a href="https://github.com/netty/netty/issues/307">#307</a>.</li>
-            <li>SSLHandler allow to detect incoming close_notify messages via a ChannelFuture that get notified. See <a href="https://github.com/netty/netty/issues/137">#137</a></li>
-            </ul>
-            
-            
-            <p>Beside this we had a handful of other bugfixes which are included.
-            For the detailed list of the changes, please refer to <a href="https://github.com/netty/netty/issues?sort=created&amp;direction=desc&amp;state=closed&amp;page=1&amp;milestone=13">the issue tracker page</a>.</p>
-            
-            <p><b>Please do not use the release as it contains a regression in ChunkedWriteHandler, use 3.4.4.Final!</b></p>
-          </div>
-          <div class='footer'>
-            <div class='comments-link'>
-               <a href="/blog/2012/05/05/#disqus_thread">Comments</a>
-            </div>
-            <div class='author'>
-              <a href="http://www.murkycloud.com/">Norman Maurer</a> on 05 May 2012
             </div>
           </div>
         </div>

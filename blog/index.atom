@@ -2,9 +2,34 @@
 <feed xml:lang='en-US' xmlns='http://www.w3.org/2005/Atom'>
   <id>http://netty.io/</id>
   <title>Netty</title>
-  <updated>2012-05-29T00:00:00Z</updated>
+  <updated>2012-05-30T00:00:00Z</updated>
   <link href='http://netty.io/blog/index.atom' rel='self' type='application/atom+xml' />
   <link href='http://netty.io/' rel='alternate' type='text/html' />
+  <entry>
+    <id>http://netty.io/blog/2012/05/30/</id>
+    <title>Sneak Peek of Netty 4.0 through Examples</title>
+    <updated>2012-05-30T00:00:00Z</updated>
+    <link href='http://netty.io/blog/2012/05/30/' rel='alternate' type='text/html' />
+    <author>
+      <name><a href="http://gleamynode.net/">Trustin Lee</a></name>
+    </author>
+    <summary>
+      Interested in the recent progress of Netty 4.0.0.Alpha1?  If you did not have a chance to keep track of the recent massive API changes in the master, you might want to start from the examples I have just forward-ported.
+      
+      The migration guide will be out and explain the new concepts and changes in 4.0, but basically you will find the code looks similar in most examples.  For the rough list of changes in 4.0, please read this and this.
+      
+      I would recommend you to load the whole project into your IDE and enjoy easier navigation.  It does not build......
+    </summary>
+    <content type='html'>
+      &lt;p&gt;Interested in the recent progress of Netty 4.0.0.Alpha1?  If you did not have a chance to keep track of the recent massive API changes in the master, you might want to start from &lt;a href=&quot;https://github.com/netty/netty/tree/master/example/src/main/java/io/netty/example&quot;&gt;the examples I have just forward-ported&lt;/a&gt;.&lt;/p&gt;
+      
+      &lt;p&gt;The migration guide will be out and explain the new concepts and changes in 4.0, but basically you will find the code looks similar in most examples.  For the rough list of changes in 4.0, please read &lt;a href=&quot;https://groups.google.com/forum/#!topic/netty/PFhK9oFRpvA&quot;&gt;this&lt;/a&gt; and &lt;a href=&quot;https://groups.google.com/forum/#!topic/netty/6dTbdXmHvD0&quot;&gt;this&lt;/a&gt;.&lt;/p&gt;
+      
+      &lt;p&gt;I would recommend you to load the whole project into your IDE and enjoy easier navigation.  It does not build completely yet, but you can run many of the examples such as HTTP and WebSockets by yourself if your IDE allows running a project with compilation errors (Eclipse does.)&lt;/p&gt;
+      
+      &lt;p&gt;If you feel like participating into what is happening in Netty 4.0, it is really good time to join &lt;a href=&quot;https://groups.google.com/forum/#!forum/netty&quot;&gt;the developer group&lt;/a&gt; to give a quick feed back, ask questions, and suggest an idea.  We are going to release the first alpha pretty soon!&lt;/p&gt;
+    </content>
+  </entry>
   <entry>
     <id>http://netty.io/blog/2012/05/29/</id>
     <title>Netty 3.4.6.Final released!</title>
