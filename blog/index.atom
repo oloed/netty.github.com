@@ -38,7 +38,7 @@
     <content type='html'>
       &lt;p&gt;The Netty project team is proud to announce the release of Netty 3.5.0.Final.&lt;/p&gt;
       
-      &lt;p&gt;The JAR file is already on &lt;a href=&quot;http://search.maven.org/#artifactdetails|io.netty|netty|3.5.0.Beta1|bundle&quot;&gt;Maven central repository&lt;/a&gt;. You can also get the full tarball from &lt;a href=&quot;http://netty.io/downloads/&quot;&gt;the download page&lt;/a&gt;.&lt;/p&gt;
+      &lt;p&gt;The JAR file is already on &lt;a href=&quot;http://search.maven.org/#artifactdetails|io.netty|netty|3.5.0.Final|bundle&quot;&gt;Maven central repository&lt;/a&gt;. You can also get the full tarball from &lt;a href=&quot;http://netty.io/downloads/&quot;&gt;the download page&lt;/a&gt;.&lt;/p&gt;
       
       &lt;p&gt;This version introduces various features. The most important are:&lt;/p&gt;
       
